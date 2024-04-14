@@ -14,6 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -23,6 +24,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author kavindu
  */
+//@WebServlet(name = "Login", urlPatterns = {"/Login"})
 public class Login extends HttpServlet {
 
     @Override
@@ -48,6 +50,7 @@ public class Login extends HttpServlet {
                 request.setAttribute("status", "failed");
                 dispatcher = request.getRequestDispatcher("login.jsp");
             }
+            dispatcher.forward(request, response);
             
         } catch (SQLException ex) {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
@@ -55,5 +58,6 @@ public class Login extends HttpServlet {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
 
 }
