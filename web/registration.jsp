@@ -24,7 +24,7 @@
 					<div class="signup-form">
 						<h2 class="form-title">Sign up</h2>
 					
-						<form method="" action="" class="register-form"
+						<form method="post" action="RegistrationServlet" class="register-form"
 							id="register-form">
 							<div class="form-group">
 								<label for="name"><i
