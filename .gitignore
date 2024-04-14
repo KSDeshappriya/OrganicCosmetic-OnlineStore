@@ -1,5 +1,5 @@
 /dist/
 /nbproject/private/
-ant-deploy.xml
-project.properties
+/nbproject/ant-deploy.xml
+/nbproject/project.properties
 /build/
