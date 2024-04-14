@@ -21,31 +21,6 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class RegistrationServlet extends HttpServlet {
 
-
-//    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-//    /**
-//     * Handles the HTTP <code>GET</code> method.
-//     *
-//     * @param request servlet request
-//     * @param response servlet response
-//     * @throws ServletException if a servlet-specific error occurs
-//     * @throws IOException if an I/O error occurs
-//     */
-//    @Override
-//    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-//            throws ServletException, IOException {
-//        processRequest(request, response);
-//    }
-
-
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -64,7 +39,7 @@ public class RegistrationServlet extends HttpServlet {
         Connection con = null;
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/youtube", "root", "");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/youtube?useSSL=false", "root", "");
             PreparedStatement pst = con.prepareStatement("INSERT INTO users(uname, upwd, uemail, umobile) VALUES(?,?,?,?)");
             pst.setString(1, uname);
             pst.setString(2, upwd);
