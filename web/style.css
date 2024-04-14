@@ -1,0 +1,103 @@
+* {
+  margin: 0px;
+  margin-top: -3px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+/* Navigation Bar */
+
+
+.container-fluid {
+  display: flex;
+  background-color: rgba(19, 15, 35, 0.822);
+  padding: 15px;
+}
+
+#navbarNav {
+  justify-content: space-evenly;
+  margin-right: 100px;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 16px !important;
+  margin: 0px 35px;
+}
+
+.nav-link:hover {
+  color: rgb(255, 87, 25) !important;
+}
+.btn-box{
+    position: relative;
+    background: transparent;
+    border: 2px solid rgb(255, 87, 25) ;
+    border-radius: 8px;
+    width: 85px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    
+}
+.btn-btn-box{
+    text-decoration: none;
+    color: rgb(255, 87, 25)  ;
+    font-size: 17px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.btn-box::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    background: rgb(255, 87, 25) ;
+    transition: 0.5s;
+}
+.btn-box:hover::before{
+    width: 100%;
+}
+
+.btn-btn-box::before{
+   color: rgb(255, 87, 25);
+}
+.btn-btn-box:hover{
+   color:rgba(19, 15, 35, 0.822) ;
+}
+
+/* Hero section */
+
+
+.hero-container-fluid {
+  background-image: url(./Image/Cover.jpg);
+  background-color: rgba(0, 0, 0, 0.507);
+  background-blend-mode: overlay;
+  background-size: cover;
+  height: 80vh;
+  margin-top: -8px;
+}
+.cover-text {
+  padding: 255px 150px;
+  height: 40vh;
+  width: 60vw;
+}
+.cover-text1 {
+  font-family: "EB Garamond", serif;
+  color: rgb(255, 87, 25);
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.cover-text2 {
+  font-size: 30px;
+  color: white;
+}
