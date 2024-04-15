@@ -50,7 +50,7 @@
           </div>
 
           <div class="btn-box">
-            <a href="login.jsp" class="btn-btn-box">Login</a>
+            <a href="login.jsp" class="btn-btn-box">Sign in</a>
           </div>
         </div>
       </nav>

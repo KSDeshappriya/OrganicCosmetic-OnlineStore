@@ -20,9 +20,6 @@
 
         <body>
             <div class="logpage">
-                <div>
-                    <img src="./Image/About.png" alt="logimage" class="log-image">
-                </div>
                 <div class="register">
                     <h1 style="text-align: center; color:black">Rgister</h1><br><br>
                     <form action="LoginServlet" method="POST">
