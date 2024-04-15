@@ -27,8 +27,8 @@
 							<p>A fully responsive site template designed by <a href="">HTML & CSS </a> and released<br />
 							for free under the <a href="">Creative Commons</a> license.</p>
 							<ul class="actions">
-								<li><a href="../product/productlist.html" class="button primary">Go Back</a></li>
-								<li><a href="../product/cart.html" class="button">Show Cart</a></li>
+								<li><a href="../product/productlist.jsp" class="button primary">Go Back</a></li>
+								<li><a href="../product/cart.jsp" class="button">Show Cart</a></li>
 							</ul>
 								
 						</div>
@@ -67,7 +67,7 @@
 									</tr>
 								</table>
 								 </p>
-								<center><button type="button" onclick="window.location.href = 'cart.html';" class="primary" >+ Add to cart</button></center>
+								<center><button type="button" onclick="window.location.href = 'cart.jsp';" class="primary" >+ Add to cart</button></center>
 							</article>
 
 					

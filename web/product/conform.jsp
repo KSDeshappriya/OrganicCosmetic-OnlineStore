@@ -27,7 +27,7 @@
 								<h2 class="major">Product De</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
 								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<center><button type="button" onclick="window.location.href = 'cart.html';" class="primary" >Shop Now</button></center>
+								<center><button type="button" onclick="window.location.href = 'cart.jsp';" class="primary" >Shop Now</button></center>
 							</article>
 
 					

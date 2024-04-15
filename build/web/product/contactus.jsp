@@ -18,16 +18,16 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<h1><a href="index.html">About Us</a></h1>
+							<h1><a href="index.jsp">About Us</a></h1>
 							<p>A free responsive site template by HTML5 UP</p>
 						</div>
 
 					<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="../home/index.html">Home</a></li>
+							<li><a href="../home/index.jsp">Home</a></li>
 								 
-							<li><a href="productlist.html">Products</a></li>
+							<li><a href="productlist.jsp">Products</a></li>
 							 
 							<li>
 								<a href="#">Category</a>
@@ -49,9 +49,9 @@
 								</ul>
 							</li>
 		<!-- 				<li><a href="left-sidebar.html">Left Sidebar</a></li>		-->
-						<li><a href="contactus.html">Contact Us</a></li>		
-						<li class="current"><a href="aboutus.html">About Us</a></li>					
-						<li><a href="cart.html">Cart</a></li>
+						<li><a href="contactus.jsp">Contact Us</a></li>		
+						<li class="current"><a href="aboutus.jsp">About Us</a></li>					
+						<li><a href="cart.jsp">Cart</a></li>
 		<!-- 				<li><a href="no-sidebar.html">No Sidebar</a></li>			-->
 						</ul>
 					</nav>

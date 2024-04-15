@@ -20,17 +20,17 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<h1><a href="index.html">Escape Velocity</a></h1>
+							<h1><a href="index.jsp">Escape Velocity</a></h1>
 							<p>A free responsive site template by HTML5 UP</p>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="../home/index.html">Home</a></li>
+								<li><a href="index.jsp">Home</a></li>
+								<li><a href="../home/index.jsp">Home</a></li>
 
-								<li class="current"><a href="productlist.html">Products</a></li>
+								<li class="current"><a href="productlist.jsp">Products</a></li>
 
 								<li>
 									<a href="#">Category</a>
@@ -52,9 +52,9 @@
 									</ul>
 								</li>
 								</li>
-							<li><a href="contactus.html">Contact Us</a></li>		
-							<li><a href="index.html">About Us</a></li>					
-							<li class="current"><a href="cart.html">Cart</a></li>
+							<li><a href="contactus.jsp">Contact Us</a></li>		
+							<li><a href="index.jsp">About Us</a></li>					
+							<li class="current"><a href="cart.jsp">Cart</a></li>
 							</ul>
 						</nav>
 
@@ -72,7 +72,7 @@
 									<h3><a href="#">Aliquam diam consequat</a></h3>
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
-										<li><a href="../home/conform.html#product" class="button style1">+ Add to cart</a></li>
+										<li><a href="../home/conform.jsp#product" class="button style1">+ Add to cart</a></li>
 									</ul>
 								</section>
 							</div>
@@ -82,7 +82,7 @@
 									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
-										<li><a href="conform.html#product" class="button style1">+ Add to cart</a></li>
+										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
 									</ul>
 								</section>
 							</div>
@@ -92,7 +92,7 @@
 									<h3><a href="#">Mattis tempus lorem</a></h3>
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
-										<li><a href="conform.html#product" class="button style1">+ Add to cart</a></li>
+										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
 									</ul>
 								</section>
 							</div>
@@ -102,7 +102,7 @@
 									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
-										<li><a href="conform.html#product" class="button style1">+ Add to cart</a></li>
+										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
 									</ul>
 								</section>
 							</div>
@@ -112,7 +112,7 @@
 									<h3><a href="#">Mattis tempus lorem</a></h3>
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
-										<li><a href="conform.html#product" class="button style1">+ Add to cart</a></li>
+										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
 									</ul>
 								</section>
 							</div>
@@ -122,7 +122,7 @@
 									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
-										<li><a href="conform.html#product" class="button style1">+ Add to cart</a></li>
+										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
 									</ul>
 								</section>
 							</div>
@@ -132,7 +132,7 @@
 									<h3><a href="#">Mattis tempus lorem</a></h3>
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
-										<li><a href="conform.html#product" class="button style1">+ Add to cart</a></li>
+										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
 									</ul>
 								</section>
 							</div>
@@ -142,7 +142,7 @@
 									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
-										<li><a href="conform.html#product" class="button style1">+ Add to cart</a></li>
+										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
 									</ul>
 								</section>
 							</div>
@@ -152,7 +152,7 @@
 									<h3><a href="#">Mattis tempus lorem</a></h3>
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
-										<li><a href="conform.html#product" class="button style1">+ Add to cart</a></li>
+										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
 									</ul>
 								</section>
 							</div>
@@ -162,7 +162,7 @@
 									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
-										<li><a href="conform.html#product" class="button style1">+ Add to cart</a></li>
+										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
 									</ul>
 								</section>
 							</div>
@@ -182,7 +182,7 @@
 									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
-										<li><a href="conform.html#product" class="button style1">+ Add to cart</a></li>
+										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
 									</ul>
 								</section>
 							</div>
@@ -192,7 +192,7 @@
 									<h3><a href="#">Mattis tempus lorem</a></h3>
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
-										<li><a href="conform.html#product" class="button style1">+ Add to cart</a></li>
+										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
 									</ul>
 								</section>
 							</div>
@@ -202,7 +202,7 @@
 									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
-										<li><a href="conform.html#product" class="button style1">+ Add to cart</a></li>
+										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
 									</ul>
 								</section>
 							</div>

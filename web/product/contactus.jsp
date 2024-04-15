@@ -1,17 +1,16 @@
 <!DOCTYPE HTML>
 <!--
-	Escape Velocity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	
+	Free for personal and commercial use under the CCA 3.0 license 
 -->
 <html>
 	<head>
-		<title>contact us</title>
+		<title>About Us</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="right-sidebar is-preload">
+	<body class="left-sidebar is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -19,16 +18,16 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<h1><a href="index.html">Contact Us</a></h1>
+							<h1><a href="index.jsp">About Us</a></h1>
 							<p>A free responsive site template by HTML5 UP</p>
 						</div>
 
 					<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="../home/index.html">Home</a></li>
+							<li><a href="../home/index.jsp">Home</a></li>
 								 
-							<li><a href="productlist.html">Products</a></li>
+							<li><a href="productlist.jsp">Products</a></li>
 							 
 							<li>
 								<a href="#">Category</a>
@@ -50,22 +49,85 @@
 								</ul>
 							</li>
 		<!-- 				<li><a href="left-sidebar.html">Left Sidebar</a></li>		-->
-						<li class="current"><a href="contactus.html">Contact Us</a></li>		
-						<li><a href="index.html">About Us</a></li>					
-						<li ><a href="cart.html">Cart</a></li>
+						<li><a href="contactus.jsp">Contact Us</a></li>		
+						<li class="current"><a href="aboutus.jsp">About Us</a></li>					
+						<li><a href="cart.jsp">Cart</a></li>
 		<!-- 				<li><a href="no-sidebar.html">No Sidebar</a></li>			-->
 						</ul>
 					</nav>
-
 
 				</section>
 
 			<!-- Main -->
 				<section id="main" class="wrapper style2">
-					<div class="title">Right Sidebar</div>
+					<div class="title">Left Sidebar</div>
 					<div class="container">
 						<div class="row gtr-150">
-							<div class="col-8 col-12-medium">
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<div id="sidebar">
+										<section class="box">
+											<header>
+												<h2>Ipsum nullam luctus</h2>
+											</header>
+											<p>Malesuada quis eget eros. Nullam sodales cursus sapien, id consequat
+											leo suscipit ut. Praesent id turpis vitae turpis pretium ultricies. Vestibulum sit
+											amet risus elit.</p>
+											<a href="#" class="button style1">Learn More</a>
+										</section>
+										<section class="box">
+											<header>
+												<h2>Vitae turpis consequat</h2>
+											</header>
+											<ul class="style2">
+												<li>
+													<article class="box post-excerpt">
+														<a href="#" class="image left"><img src="images/pic08.jpg" alt="" /></a>
+														<h3><a href="#">Diam odio lorem</a></h3>
+														<p>Duis odio diam, luctus et vulputate vitae, vehicula ac dolor. Pellentesque at urna eget tellus sed etiam.</p>
+														
+													</article>
+												</li>
+												<li>
+													<article class="box post-excerpt">
+														<a href="#" class="image left"><img src="images/pic09.jpg" alt="" /></a>
+														<h3><a href="#">Sed duis consequat</a></h3>
+														<p>Duis odio diam, luctus et vulputate vitae, vehicula ac dolor. Pellentesque at urna eget tellus sed etiam.</p>
+													</article>
+												</li>
+												<li>
+													<article class="box post-excerpt">
+														<a href="#" class="image left"><img src="images/pic10.jpg" alt="" /></a>
+														<h3><a href="#">Tellus nulla volutpat</a></h3>
+														<p>Duis odio diam, luctus et vulputate vitae, vehicula ac dolor. Pellentesque at urna eget tellus sed etiam.</p>
+													</article>
+												</li>
+											</ul>
+											<a href="#" class="button style1">Archives</a>
+										</section>
+										<section class="box">
+											<header>
+												<h2>Magna diam vehicula</h2>
+											</header>
+											<ul class="style3">
+												<li><a href="#">Nulla iaculis egestas varius</a></li>
+												<li><a href="#">Augue massa feugiat quam pretium</a></li>
+												<li><a href="#">Orci sem vel libero cras nisi odio</a></li>
+												<li><a href="#">Sed hendrerit massa nam mattis</a></li>
+												<li><a href="#">Turpis vel leo accumsan aliquet</a></li>
+												<li><a href="#">Dapibus mi fermentum fusce non</a></li>
+												<li><a href="#">Arcu laoreet sapien tempus</a></li>
+												<li><a href="#">Nulla iaculis egestas varius</a></li>
+												<li><a href="#">Augue massa feugiat quam pretium</a></li>
+												<li><a href="#">Orci sem vel libero cras nisi odio</a></li>
+												<li><a href="#">Sed hendrerit massa nam mattis</a></li>
+											</ul>
+										</section>
+									</div>
+
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
 
 								<!-- Content -->
 									<div id="content">
@@ -136,69 +198,6 @@
 									</div>
 
 							</div>
-							<div class="col-4 col-12-medium">
-
-								<!-- Sidebar -->
-									<div id="sidebar">
-										<section class="box">
-											<header>
-												<h2>Ipsum nullam luctus</h2>
-											</header>
-											<p>Malesuada quis eget eros. Nullam sodales cursus sapien, id consequat
-											leo suscipit ut. Praesent id turpis vitae turpis pretium ultricies. Vestibulum sit
-											amet risus elit.</p>
-											<a href="#" class="button style1">Learn More</a>
-										</section>
-										<section class="box">
-											<header>
-												<h2>Vitae turpis consequat</h2>
-											</header>
-											<ul class="style2">
-												<li>
-													<article class="box post-excerpt">
-														<a href="#" class="image left"><img src="images/pic08.jpg" alt="" /></a>
-														<h3><a href="#">Diam odio lorem</a></h3>
-														<p>Duis odio diam, luctus et vulputate vitae, vehicula ac dolor. Pellentesque at urna eget tellus sed etiam.</p>
-													</article>
-												</li>
-												<li>
-													<article class="box post-excerpt">
-														<a href="#" class="image left"><img src="images/pic09.jpg" alt="" /></a>
-														<h3><a href="#">Sed duis consequat</a></h3>
-														<p>Duis odio diam, luctus et vulputate vitae, vehicula ac dolor. Pellentesque at urna eget tellus sed etiam.</p>
-													</article>
-												</li>
-												<li>
-													<article class="box post-excerpt">
-														<a href="#" class="image left"><img src="images/pic10.jpg" alt="" /></a>
-														<h3><a href="#">Tellus nulla volutpat</a></h3>
-														<p>Duis odio diam, luctus et vulputate vitae, vehicula ac dolor. Pellentesque at urna eget tellus sed etiam.</p>
-													</article>
-												</li>
-											</ul>
-											<a href="#" class="button style1">Archives</a>
-										</section>
-										<section class="box">
-											<header>
-												<h2>Magna diam vehicula</h2>
-											</header>
-											<ul class="style3">
-												<li><a href="#">Nulla iaculis egestas varius</a></li>
-												<li><a href="#">Augue massa feugiat quam pretium</a></li>
-												<li><a href="#">Orci sem vel libero cras nisi odio</a></li>
-												<li><a href="#">Sed hendrerit massa nam mattis</a></li>
-												<li><a href="#">Turpis vel leo accumsan aliquet</a></li>
-												<li><a href="#">Dapibus mi fermentum fusce non</a></li>
-												<li><a href="#">Arcu laoreet sapien tempus</a></li>
-												<li><a href="#">Nulla iaculis egestas varius</a></li>
-												<li><a href="#">Augue massa feugiat quam pretium</a></li>
-												<li><a href="#">Orci sem vel libero cras nisi odio</a></li>
-												<li><a href="#">Sed hendrerit massa nam mattis</a></li>
-											</ul>
-										</section>
-									</div>
-
-							</div>
 						</div>
 					</div>
 				</section>
@@ -208,7 +207,6 @@
 					<div class="title">The Endorsements</div>
 					<div class="container">
 						<div class="row aln-center">
-							<ul>
 							<div class="col-4 col-12-medium">
 								<section class="highlight">
 									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
@@ -236,7 +234,7 @@
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
 										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>ek
+									</ul>
 								</section>
 							</div>
 						</div>
