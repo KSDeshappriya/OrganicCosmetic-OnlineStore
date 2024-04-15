@@ -132,7 +132,7 @@
 
       <div class="about-section">
         <div class="about-image">
-          <img src="./Image/About.png" alt="About Image"  class="about-image"/>
+          <img src="./Image/Log.jpg" alt="About Image"  class="about-image"/>
         </div>
         <div class="about-text">
           <p class="abt-text1">Live Life Cleam</p>

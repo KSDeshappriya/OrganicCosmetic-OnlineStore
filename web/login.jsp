@@ -21,7 +21,7 @@
         <body>
             <div class="logpage">
                 <div class="register">
-                    <h1 style="text-align: center; color:black">Rgister</h1><br><br>
+                    <h1 style="text-align: center; color:rgb(255, 255, 255)">Rgister</h1><br><br>
                     <form action="LoginServlet" method="POST">
                         <table border="0"  >
     
