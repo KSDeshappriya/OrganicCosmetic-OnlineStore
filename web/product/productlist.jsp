@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page import="java.util.List, product.product, product.DBConnection" %>
+<%@ page import="java.util.List, product.product, product.DBConnection, java.util.Base64" %>
 
 <!DOCTYPE HTML>
 <!--
@@ -97,15 +97,24 @@
       
 							<div class="col-4 col-12-medium">
 								<section class="highlight">
-								 <a href="#" class="image featured"><img src="${product.img}" alt="" /></a>
-								<h3><a href="#">${product.name}</a></h3>
+          <%
+                  byte[] imageData = product.getImageData();
+                if (imageData != null) {
+                    String imageBase64 = Base64.getEncoder().encodeToString(imageData);
+            %>
+            <a href="#" class="image featured"><img src="data:image/jpg;base64,<%= imageBase64 %>" alt="" /></a>
+            <%
+                } else {
+                    out.println("No image available");
+                }
+            %>
+                                                                    <h3><a href="#">${product.name}</a></h3>
 								<p>${product.category}</p>
                                                                 <p>${product.description}</p>
                                                                 <h3>${product.price}</h3>
                                                                <ul class="actions">
 										<li><a href="CartServlet?action=add&id=${product.id}" class="button style1">+ Add to cart</a></li>
-									</ul>
-								 </tr>	
+									</ul>	
                                                                 </section>
                                                                 
 							</div>

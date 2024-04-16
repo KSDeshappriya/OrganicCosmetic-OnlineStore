@@ -1,5 +1,6 @@
 package product;
 
+import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -38,12 +39,13 @@ public class DBConnection {
             // Process the result set and create Product objects
             while (resultSet.next()) {
                 int id = resultSet.getInt("ID");
+                byte[] imageData = getProductImageById(id);
                 String name = resultSet.getString("product_name");
                 String category = resultSet.getString("category");
-                String img = resultSet.getString("Image");
+                 
                 String description = resultSet.getString("product_description");
                 double price = resultSet.getDouble("Price");
-                product product = new product(id, name, category, img, description, price);
+                product product = new product( id, imageData, name, category, description, price);
                 products.add(product);
             }
 
@@ -78,12 +80,13 @@ public class DBConnection {
 
             if (resultSet.next()) {
                 int id = resultSet.getInt("ID");
+                byte[] imageData = getProductImageById(id);
                 String name = resultSet.getString("product_name");
                 String category = resultSet.getString("category");
-                String img = resultSet.getString("Image");
+                            
                 String description = resultSet.getString("product_description");
                 double price = resultSet.getDouble("Price");
-                product = new product(id, name, category, img, description, price );
+                product = new product(id, imageData, name, category, description, price );
             }
 
             // Close the resources
@@ -95,5 +98,41 @@ public class DBConnection {
         }
 
         return product;
+    }
+
+ public byte[] getProductImageById(int productId) {
+        byte[] imageData = null;
+
+        try {
+            // Load the JDBC driver
+            Class.forName("com.mysql.jdbc.Driver");
+
+            // Get the connection
+            Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+
+            // Prepare the SQL query
+            String query = "SELECT Image FROM organic_cosmetics WHERE ID = ?";
+            PreparedStatement statement = connection.prepareStatement(query);
+            statement.setInt(1, productId);
+
+            // Execute the query and get the result set
+            ResultSet resultSet = statement.executeQuery();
+
+            if (resultSet.next()) {
+                Blob imageBlob = resultSet.getBlob("Image");
+                if (imageBlob != null) {
+                    imageData = imageBlob.getBytes(1, (int) imageBlob.length());
+                }
+            }
+
+            // Close the resources
+            resultSet.close();
+            statement.close();
+            connection.close();
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+
+        return imageData;
     }
 }
