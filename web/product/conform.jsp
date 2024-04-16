@@ -1,4 +1,5 @@
-<!DOCTYPE HTML>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%><!DOCTYPE HTML>
 <!--
 	Dimension by HTML
 	Free for personal and commercial use under the CCA 3.0 license

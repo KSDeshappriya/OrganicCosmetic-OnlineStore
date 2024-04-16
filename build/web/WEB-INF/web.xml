@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <listener-class>cart.SessionInitializer</listener-class>
+    <servlet>
+        <servlet-name>AddToCart</servlet-name>
+        <servlet-class>cart.AddToCart</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DBservlet</servlet-name>
+        <servlet-class>cart.DBservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DB</servlet-name>
+        <servlet-class>cart.DB</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddToCart</servlet-name>
+        <url-pattern>/AddToCart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DBservlet</servlet-name>
+        <url-pattern>/DBservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DB</servlet-name>
+        <url-pattern>/DB</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

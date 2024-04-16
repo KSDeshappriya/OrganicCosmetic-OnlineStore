@@ -1,3 +1,6 @@
+<%@page import="java.sql.ResultSet"%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <!--
 	
@@ -76,16 +79,31 @@
 									</ul>
 								</section>
 							</div>
+                                                    
+ <!--  ------------------------------------------------------------------------------   -->
+                                                    
+   <% ResultSet rs = DB.getConnection().createStatement().executeQuery("select * from organic_cosmetics");
+       while(rs.next()){
+      %>
 							<div class="col-4 col-12-medium">
 								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+									<a href="#" class="image featured"><img src="<%=rs.getString("Image") %>" alt="" /></a>
+                                    <h3><%=rs.getString("product_name") %></h3>
+                            		<h5><%=rs.getString("ID") %></h5>
+									<p><%=rs.getString("product_description") %></p>
+                                    <h4><%=rs.getString("price") %></h3>
+                                    <form action="conform.jsp#product" method="post">                                   
 									<ul class="actions">
-										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
+										<li><input type="hidden" name="ID" value="<%=rs.getString("ID") %>"></li>
+										<li><input type="submit" class="button style1" value="+ Add to cart"></li>
 									</ul>
+								</form> 
 								</section>
 							</div>
+         <% } %>
+                                                        
+      <!--  ------------------------------------------------------------------------------   -->
+                                                        
 							<div class="col-4 col-12-medium">
 								<section class="highlight">
 									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
