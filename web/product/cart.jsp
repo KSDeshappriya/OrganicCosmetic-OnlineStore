@@ -1,4 +1,6 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page import="java.util.List, product.product, product.DBConnection" %>
 <!DOCTYPE HTML>
 <!--
 
@@ -76,14 +78,48 @@
 								</header>
 								<div class="feature-list">
 									<div class="row">
-                                        <ol>
-                                        <li><div class="col-6 col-12-medium">
+                                                                                                                                <%
+                                                            List<product> products = (List<product>) request.getAttribute("products");
+                                                            if (products != null) {
+                                                                System.out.println("Products in cart: " + products.size());
+                                                            } else {
+                                                                System.out.println("No products in cart");
+                                                            }
+                                                        %>      
+                                                        <table>
+                                                                    <tr>
+                                                                        <th><h2>Product ID<h2></th>
+                                                                        <th><h2>Product Name<h2></th>
+                                                                        <th><h2>category<h2></th>
+                                                                        <th><h2>Image<h2></th>
+                                                                        <th><h2>product_description<h2></th>
+                                                                        <th><h2>Price<h2></th>
+                                                                        <th><h2>Select<h2></th>
+                                                                    </tr>
+                                                              <ol> <c:forEach items="${products}" var="product">
+                                                                                  
+                                                                                   <tr>     
+                                                                                    <li>
+                                                                                        <div class="col-6 col-12-medium">
 											<section>
-												<h3 class="icon fa-comment">Mattis velit diam vulputate</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-												
+												<td><h3 class="icon fa-comment">${product.id}</h3></td>
+												<td><p>${product.img}</p></td>
+                                                                                                <td><p>${product.name}</p></td>
+                                                                                                <td><p>${product.category}</p></td>
+                                                                                                <td><p>${product.description}</p></td>
+                                                                                                <td><p>${product.price}</p></td>
+												<td><a href="#" class="button style2 large">+ ADD</a></td>
 											</section>
-										</div></li>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                   </tr>
+                                                                                 
+                                                                        </c:forEach>  </ol>             
+                                                          </table>
+                                                                                    
+                                                        
+                                                        <!--
+                                                        
 										<li><div class="col-6 col-12-medium">
 											<section>
 												<h3 class="icon solid fa-sync">Lorem ipsum dolor sit veroeros</h3>
@@ -119,7 +155,8 @@
 												<a href="#" class="button style2 large">+ ADD</a>
 											</section>
 										</div></li>
-                                        </ol>
+                                                        -->
+                                       
 									</div>
 								</div>
 								<ul class="actions special">

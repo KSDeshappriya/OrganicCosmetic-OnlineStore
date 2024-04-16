@@ -1,6 +1,7 @@
-<%@page import="java.sql.ResultSet"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page import="java.util.List, product.product, product.DBConnection" %>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <!--
 	
@@ -69,7 +70,7 @@
 					<div class="title">The Products</div>
 					<div class="container">
 						<div class="row aln-center">
-							<div class="col-4 col-12-medium">
+							<!--<div class="col-4 col-12-medium">
 								<section class="highlight">
 									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
 									<h3><a href="#">Aliquam diam consequat</a></h3>
@@ -78,43 +79,39 @@
 										<li><a href="../home/conform.jsp#product" class="button style1">+ Add to cart</a></li>
 									</ul>
 								</section>
-							</div>
+							</div>-->
                                                     
  <!--  ------------------------------------------------------------------------------   -->
-                                                    
-   <% ResultSet rs = DB.getConnection().createStatement().executeQuery("select * from organic_cosmetics");
-       while(rs.next()){
-      %>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="<%=rs.getString("Image") %>" alt="" /></a>
-                                    <h3><%=rs.getString("product_name") %></h3>
-                            		<h5><%=rs.getString("ID") %></h5>
-									<p><%=rs.getString("product_description") %></p>
-                                    <h4><%=rs.getString("price") %></h3>
-                                    <form action="conform.jsp#product" method="post">                                   
-									<ul class="actions">
-										<li><input type="hidden" name="ID" value="<%=rs.getString("ID") %>"></li>
-										<li><input type="submit" class="button style1" value="+ Add to cart"></li>
-									</ul>
-								</form> 
-								</section>
-							</div>
-         <% } %>
-                                                        
+                                               
+
+                            <%
+                               DBConnection dbConnection = new DBConnection();
+                               List<product> products = dbConnection.getProducts();
+                               request.setAttribute("products", products);
+                           %>
+
       <!--  ------------------------------------------------------------------------------   -->
-                                                        
+                                        
+                                                
+                                                     <c:forEach items="${products}" var="product">
+      
 							<div class="col-4 col-12-medium">
 								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Mattis tempus lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
+								 <a href="#" class="image featured"><img src="${product.img}" alt="" /></a>
+								<h3><a href="#">${product.name}</a></h3>
+								<p>${product.category}</p>
+                                                                <p>${product.description}</p>
+                                                                <h3>${product.price}</h3>
+                                                               <ul class="actions">
+										<li><a href="CartServlet?action=add&id=${product.id}" class="button style1">+ Add to cart</a></li>
 									</ul>
-								</section>
+								 </tr>	
+                                                                </section>
+                                                                
 							</div>
-							<div class="col-4 col-12-medium">
+                                                          </c:forEach>              
+                                                                        
+		<!--					<div class="col-4 col-12-medium">
 								<section class="highlight">
 									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
 									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
@@ -151,46 +148,6 @@
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
 										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Mattis tempus lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Mattis tempus lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">+ Add to cart</a></li>
 									</ul>
 								</section>
 							</div>
@@ -240,6 +197,46 @@
 									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
+										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+									<h3><a href="#">Mattis tempus lorem</a></h3>
+									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+									<ul class="actions">
+										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
+									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+									<ul class="actions">
+										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+									<h3><a href="#">Mattis tempus lorem</a></h3>
+									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+									<ul class="actions">
+										<li><a href="#" class="button style1">+ Add to cart</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
+									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+									<ul class="actions">
 										<li><a href="#" class="button style1">+ Add to cart</a></li>
 									</ul>
 								</section>
@@ -254,6 +251,7 @@
 									</ul>
 								</section>
 							</div>
+  -->
 						</div>
 					</div>
 				</section>
