@@ -12,6 +12,10 @@
         <servlet-name>CartServlet</servlet-name>
         <servlet-class>product.CartServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ProductListServlet</servlet-name>
+        <servlet-class>product.ProductListServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>cartServlet</servlet-name>
         <url-pattern>/cartServlet</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>CartServlet</servlet-name>
         <url-pattern>/CartServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductListServlet</servlet-name>
+        <url-pattern>/ProductListServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

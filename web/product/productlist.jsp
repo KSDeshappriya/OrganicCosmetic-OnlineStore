@@ -25,17 +25,17 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<h1><a href="index.jsp">Escape Velocity</a></h1>
+							<h1><a href="">Escape Velocity</a></h1>
 							<p>A free responsive site template by HTML5 UP</p>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="index.jsp">Home</a></li>
+								
 								<li><a href="../home/index.jsp">Home</a></li>
 
-								<li class="current"><a href="productlist.jsp">Products</a></li>
+								<li class="current"><a href="../product/productlist.jsp">Products</a></li>
 
 								<li>
 									<a href="#">Category</a>
@@ -59,7 +59,7 @@
 								</li>
 							<li><a href="contactus.jsp">Contact Us</a></li>		
 							<li><a href="index.jsp">About Us</a></li>					
-							<li class="current"><a href="cart.jsp">Cart</a></li>
+							<li><a href="../CartServlet?action=view">Cart</a></li>
 							</ul>
 						</nav>
 
@@ -96,9 +96,10 @@
                                                 
                                                      <c:forEach items="${products}" var="product">
       
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-                                                                        <c:choose>
+													<div class="col-4 col-12-medium">
+														<section class="highlight">
+										
+                                                                                 <h3><a href="#">${product.getName()}</a></h3>										<c:choose>
                                                                                 <c:when test="${not empty product.image}">
                                                                                     <a href="#" class="image featured">
                                                                                         <img src="data:image/jpg;base64,${base64Image}" alt="" />
@@ -111,162 +112,23 @@
                                                                                 </c:otherwise>
                                                                             </c:choose>
               
-           
-                                                                    <h3><a href="#">${product.getName()}</a></h3>
-								<p>${product.getCategory()}</p>
-                                                                <p>${product.getDescription()}</p>
-                                                                <h3>${product.getPrice()}</h3>
+                                                      
+                                                  <p>Category: ${product.getCategory()}</td>
+                                                                <br>"${product.getDescription()}"</p>
+                                                                <h3>$. ${product.getPrice()}</h3>
                                                                <ul class="actions">
-										<li><a href="CartServlet?action=add&id=${product.getId()}" class="button style1">+ Add to cart</a></li>
+										<li><a href="../CartServlet?action=add&id=${product.getId()}" class="button style1">+ Add to cart</a></li>
 									</ul>	
                                                                 </section>
+                                                                
                                                                 
 							</div>
                                                           </c:forEach>              
                                                                         
-		<!--					<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Mattis tempus lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Mattis tempus lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Mattis tempus lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Mattis tempus lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Mattis tempus lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="conform.jsp#product" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Mattis tempus lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Mattis tempus lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">+ Add to cart</a></li>
-									</ul>
-								</section>
-							</div>
-  -->
+	
 						</div>
 					</div>
+                            <a href="../CartServlet?action=view">View Cart</a>
 				</section>
 
 

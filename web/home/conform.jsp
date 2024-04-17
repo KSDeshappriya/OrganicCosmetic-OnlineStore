@@ -29,7 +29,7 @@
 							for free under the <a href="">Creative Commons</a> license.</p>
 							<ul class="actions">
 								<li><a href="../product/productlist.jsp" class="button primary">Go Back</a></li>
-								<li><a href="../product/cart.jsp" class="button">Show Cart</a></li>
+								<li><a href="../CartServlet?action=view" class="button">Show Cart</a></li>
 							</ul>
 								
 						</div>

@@ -31,14 +31,14 @@ public class CartServlet extends HttpServlet {
         if (action != null && action.equalsIgnoreCase("add")) {
             int productId = Integer.parseInt(request.getParameter("id"));
             addToCart(session, productId);
-            response.sendRedirect("productlist.jsp");
+            response.sendRedirect("product/productlist.jsp");
         } else if (action != null && action.equalsIgnoreCase("view")) {
             List<Integer> cart = (List<Integer>) session.getAttribute("cart");
             System.out.println("Cart contents: " + cart);
 
             List<product> cartProducts = getCartProducts(session);
             request.setAttribute("products", cartProducts);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("cart.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("product/cart.jsp");
             dispatcher.forward(request, response);
         }
     }

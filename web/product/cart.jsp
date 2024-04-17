@@ -11,7 +11,7 @@
 		<title>Cart</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="product/assets/css/main.css" />
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -30,7 +30,7 @@
 							<ul>
 								<li><a href="../home/index.jsp">Home</a></li>
 								 	
-								<li><a href="productlist.jsp">Products</a></li>
+								<li><a href="product/productlist.jsp">Products</a></li>
 								 
 								<li>
 									<a href="#">Category</a>
@@ -52,9 +52,9 @@
 									</ul>
 								</li>
 			<!-- 				<li><a href="left-sidebar.html">Left Sidebar</a></li>		-->
-							<li><a href="contactus.jsp">Contact Us</a></li>		
-							<li><a href="aboutus.jsp">About Us</a></li>					
-							<li class="current"><a href="cart.jsp">Cart</a></li>
+							<li><a href="product/contactus.jsp">Contact Us</a></li>		
+							<li><a href="product/aboutus.jsp">About Us</a></li>					
+							<li class="current"><a href="../CartServlet?action=view">Cart</a></li>
 			<!-- 				<li><a href="no-sidebar.html">No Sidebar</a></li>			-->
 							</ul>
 						</nav>
@@ -76,6 +76,8 @@
 									<h2>Dolor consequat feugiat amet veroeros</h2>
 									<p>Feugiat dolor nullam orci pretium phasellus justo</p>
 								</header>
+                                                            
+                                                            <form action="#" method="post">
 								<div class="feature-list">
 									<div class="row">
                                                                                                                                 <%
@@ -89,73 +91,34 @@
                                                         <table>
                                                                     <tr>
                                                                         <th><h2>Product ID<h2></th>
+                                                                        <th><h2>Image<h2></th>
                                                                         <th><h2>Product Name<h2></th>
                                                                         <th><h2>category<h2></th>
-                                                                        <th><h2>Image<h2></th>
+                                                                        
                                                                         <th><h2>product_description<h2></th>
                                                                         <th><h2>Price<h2></th>
                                                                         <th><h2>Select<h2></th>
                                                                     </tr>
-                                                              <ol> <c:forEach items="${products}" var="product">
-                                                                                  
+                                                              <div class="col-6 col-12-medium">
+                                                                 
+                                                                  <c:forEach items="${products}" var="product">
+                                                                      <center>
                                                                                    <tr>     
-                                                                                    <li>
-                                                                                        <div class="col-6 col-12-medium">
-											<section>
-												<td><h3 class="icon fa-comment">${product.id}</h3></td>
-												<td><p>${product.img}</p></td>
-                                                                                                <td><p>${product.name}</p></td>
-                                                                                                <td><p>${product.category}</p></td>
-                                                                                                <td><p>${product.description}</p></td>
-                                                                                                <td><p>${product.price}</p></td>
-												<td><a href="#" class="button style2 large">+ ADD</a></td>
-											</section>
-                                                                                        </div>
-                                                                                    </li>
-                                                                                   </tr>
-                                                                                 
-                                                                        </c:forEach>  </ol>             
+                                                                                                <td><p> ${product.getId()} </p></td>
+												<td><p> ${product.getImage()} </p></td>
+                                                                                                <td><p> ${product.getName()} </p></td>
+                                                                                                <td><p> ${product.getCategory()} </p></td>
+                                                                                                <td><p> ${product.getDescription()} </p></td>
+                                                                                                <td><p> ${product.getPrice()} </p></td>
+												<td><p><input type="checkbox" id="${product.getId()}" name="${product.getId()}" value="${product.getId()}"></p></td>
+										  </tr>
+                                                                                 </center>
+                                                                        </c:forEach> 
+                                                                                  
+                                                              </div>             
                                                           </table>
                                                                                     
-                                                        
-                                                        <!--
-                                                        
-										<li><div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon solid fa-sync">Lorem ipsum dolor sit veroeros</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-												<a href="#" class="button style2 large">+ ADD</a>
-											</section>
-										</div></li>
-										<li><div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon fa-image">Pretium phasellus justo lorem</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-												<a href="#" class="button style2 large">+ ADD</a>
-											</section>
-										</div></li>
-										<li><div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon solid fa-cog">Tempus sed pretium orci</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-												<a href="#" class="button style2 large">+ ADD</a>
-											</section>
-										</div></li>
-										<li><div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon solid fa-wrench">Aliquam consequat et feugiat</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-												<a href="#" class="button style2 large">+ ADD</a>
-											</section>
-										</div></li>
-										<li><div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon solid fa-check">Dolore laoreet aliquam mattis</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-												<a href="#" class="button style2 large">+ ADD</a>
-											</section>
-										</div></li>
-                                                        -->
+                                                      
                                        
 									</div>
 								</div>
@@ -163,7 +126,8 @@
 									<li><a href="#" class="button style1 large">GO Back</a></li>
 									<li><a href="#" class="button style2 large">Checkout Now</a></li>
 								</ul>
-							</section>
+							</form>
+                                                        </section>
 
 					</div>
 				</section>
@@ -256,7 +220,7 @@
 						</div>
 						<div id="copyright">
 							<ul>
-								<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Untitled.</li><li>Design: <a href="">HTML</a></li>
 							</ul>
 						</div>
 					</div>

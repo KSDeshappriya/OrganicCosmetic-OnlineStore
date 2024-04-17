@@ -53,7 +53,7 @@
 		<!-- 				<li><a href="left-sidebar.html">Left Sidebar</a></li>		-->
 						<li class="current"><a href="contactus.jsp">Contact Us</a></li>		
 						<li><a href="index.jsp">About Us</a></li>					
-						<li ><a href="cart.jsp">Cart</a></li>
+						<li ><a href="../CartServlet?action=view">Cart</a></li>
 		<!-- 				<li><a href="no-sidebar.html">No Sidebar</a></li>			-->
 						</ul>
 					</nav>
