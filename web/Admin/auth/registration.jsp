@@ -25,7 +25,7 @@
                         <div class="signup-form">
                             <h2 class="form-title">Sign up</h2>
 
-                            <form method="post" action="RegistrationServlet" class="register-form"
+                            <form method="post" action="../../RegistrationServlet" class="register-form"
                                   id="register-form">
                                 <div class="form-group">
                                     <label for="name"><i
@@ -84,10 +84,13 @@
         <link rel="stylesheet" href="alert/dist/sweetalert.css">
 
         <script>
-            var status = document.getElementById("status").value;
-            if(status == "success"){
-                swal("Congrats", "Account Created Successfully", "success")
-            }
+            document.addEventListener('DOMContentLoaded', function () {
+                const params = new URLSearchParams(window.location.search);
+                const status = params.get('status');
+                if (status == "success") {
+                    swal("Congrats", "Account Created Successfully", "success")
+                }
+            });
         </script>
 
 

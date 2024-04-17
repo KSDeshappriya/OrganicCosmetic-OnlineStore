@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
- */
 package registration;
 
 import java.io.IOException;
@@ -10,20 +6,12 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-/**
- *
- * @author kavindu
- */
-//@WebServlet(name = "Login", urlPatterns = {"/Login"})
 public class Login extends HttpServlet {
 
     @Override
@@ -31,10 +19,8 @@ public class Login extends HttpServlet {
             throws ServletException, IOException {
         String uemail = request.getParameter("username");
         String upwd = request.getParameter("password");
-        HttpSession session = request.getSession();
-        RequestDispatcher dispatcher = null;
         
-        try{
+        try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/youtube?useSSL=false", "root", "");
             PreparedStatement pst = con.prepareStatement("SELECT * FROM users WHERE uemail = ? AND upwd = ?");
@@ -42,21 +28,15 @@ public class Login extends HttpServlet {
             pst.setString(2, upwd);
             
             ResultSet rs = pst.executeQuery();
-            if(rs.next()){
+            if (rs.next()) {
+                HttpSession session = request.getSession();
                 session.setAttribute("name", rs.getString("uname"));
-                dispatcher = request.getRequestDispatcher("index.jsp");
-            } else{
-                request.setAttribute("status", "failed");
-                dispatcher = request.getRequestDispatcher("login.jsp");
+                response.sendRedirect(request.getContextPath() + "/index.jsp");
+            } else {
+                response.sendRedirect(request.getContextPath() + "/Admin/auth/login.jsp?status=failed");
             }
-            dispatcher.forward(request, response);
-            
-        } catch (SQLException ex) {
-            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException | ClassNotFoundException ex) {
+            ex.printStackTrace();
         }
     }
-
-
 }

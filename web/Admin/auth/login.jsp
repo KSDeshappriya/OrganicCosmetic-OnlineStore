@@ -31,7 +31,7 @@
 
                         <div class="signin-form">
                             <h2 class="form-title">Sign in</h2>
-                            <form method="post" action="Login" class="register-form"
+                            <form method="post" action="../../Login" class="register-form"
                                   id="login-form">
                                 <div class="form-group">
                                     <label for="username"><i
@@ -76,15 +76,18 @@
         <!-- JS -->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="js/main.js"></script>
-        
-         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <link rel="stylesheet" href="alert/dist/sweetalert.css">
 
         <script>
-            var status = document.getElementById("status").value;
-            if(status == "failed"){
-                swal("Sorry", "Wrong username or password", "error")
-            }
+            document.addEventListener('DOMContentLoaded', function () {
+                const params = new URLSearchParams(window.location.search);
+                const status = params.get('status');
+                if (status == "failed") {
+                    swal("Sorry", "Wrong username or password", "error")
+                }
+            });
         </script>
     </body>
     <!-- This templates was made by Colorlib (https://colorlib.com) -->

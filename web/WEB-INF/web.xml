@@ -9,6 +9,7 @@
         <servlet-name>RegistrationServlet</servlet-name>
         <url-pattern>/RegistrationServlet</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>Login</servlet-name>
         <servlet-class>registration.Login</servlet-class>
@@ -17,15 +18,19 @@
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
     </servlet-mapping>
+
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
+
     <error-page>
         <exception-type>java.lang.ArrayIndexOutOfBoundsException</exception-type>
         <location>/ServletErrorPage</location>
     </error-page>
+
     <error-page>
         <error-code>404</error-code>
         <location>/error404.html</location>
     </error-page>
+    
 </web-app>
