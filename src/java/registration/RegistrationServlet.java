@@ -19,16 +19,18 @@ public class RegistrationServlet extends HttpServlet {
         String uemail = request.getParameter("email");
         String upwd = request.getParameter("pass");
         String umobile = request.getParameter("contact");
+        String role = request.getParameter("role"); // Retrieve selected role
         
         Connection con = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/youtube?useSSL=false", "root", "");
-            PreparedStatement pst = con.prepareStatement("INSERT INTO users(uname, upwd, uemail, umobile) VALUES(?,?,?,?)");
+            PreparedStatement pst = con.prepareStatement("INSERT INTO users(uname, upwd, uemail, umobile, role) VALUES(?,?,?,?, ?)");
             pst.setString(1, uname);
             pst.setString(2, upwd);
             pst.setString(3, uemail);
             pst.setString(4, umobile);
+            pst.setString(5, role); // Set the role in the PreparedStatement
             
             int rowCount = pst.executeUpdate();
             String status = (rowCount > 0) ? "success" : "failed";

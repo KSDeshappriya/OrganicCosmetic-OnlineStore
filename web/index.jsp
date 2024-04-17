@@ -51,7 +51,7 @@
 
 <!-- Page Content -->
 <div class="container mt-5">
-  <h1>Welcome to Your Website</h1>
+  <h1>Welcome <span style="color: brown;"><%= session.getAttribute("name")%></span> !!</h1>
   <p>This is a simple home page with a navigation bar.</p>
 </div>
 
