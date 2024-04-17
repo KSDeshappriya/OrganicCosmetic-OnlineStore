@@ -15,14 +15,14 @@ public class product {
     private int id;
     private String name;
     private String category;
-    public byte[] imageData;
+    public byte[] image;
     private String description;
     private double price;
 
-    public product( int id, byte[] imageData, String name, String category , String description, double price) {
+    public product( int id, byte[] image, String name, String category , String description, double price) {
         
         this.id = id;
-        this.imageData= imageData;
+        this.image= image;
         this.name = name;
         this.category = category;
          
@@ -34,11 +34,9 @@ public class product {
         return id;
     }
     
-    public byte[] getImageData() {
-        return imageData;
+    public byte[] getImage() {
+        return image;
     }
-
-    
 
     public String getName() {
         return name;

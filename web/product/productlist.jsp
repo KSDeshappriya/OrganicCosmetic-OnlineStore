@@ -1,3 +1,4 @@
+<%@page import="java.lang.System.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page import="java.util.List, product.product, product.DBConnection, java.util.Base64" %>
@@ -97,23 +98,26 @@
       
 							<div class="col-4 col-12-medium">
 								<section class="highlight">
-          <%
-                  byte[] imageData = product.getImageData();
-                if (imageData != null) {
-                    String imageBase64 = Base64.getEncoder().encodeToString(imageData);
-            %>
-            <a href="#" class="image featured"><img src="data:image/jpg;base64,<%= imageBase64 %>" alt="" /></a>
-            <%
-                } else {
-                    out.println("No image available");
-                }
-            %>
-                                                                    <h3><a href="#">${product.name}</a></h3>
-								<p>${product.category}</p>
-                                                                <p>${product.description}</p>
-                                                                <h3>${product.price}</h3>
+                                                                        <c:choose>
+                                                                                <c:when test="${not empty product.image}">
+                                                                                    <a href="#" class="image featured">
+                                                                                        <img src="data:image/jpg;base64,${base64Image}" alt="" />
+                                                                                    </a>
+                                                                                </c:when>
+                                                                                <c:otherwise>
+                                                                                    <a href="#" class="image featured">
+                                                                                        <img src="default_image.jpg" alt="" />
+                                                                                    </a>
+                                                                                </c:otherwise>
+                                                                            </c:choose>
+              
+           
+                                                                    <h3><a href="#">${product.getName()}</a></h3>
+								<p>${product.getCategory()}</p>
+                                                                <p>${product.getDescription()}</p>
+                                                                <h3>${product.getPrice()}</h3>
                                                                <ul class="actions">
-										<li><a href="CartServlet?action=add&id=${product.id}" class="button style1">+ Add to cart</a></li>
+										<li><a href="CartServlet?action=add&id=${product.getId()}" class="button style1">+ Add to cart</a></li>
 									</ul>	
                                                                 </section>
                                                                 
