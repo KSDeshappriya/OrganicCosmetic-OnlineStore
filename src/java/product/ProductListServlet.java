@@ -67,7 +67,7 @@ public class ProductListServlet extends HttpServlet {
             ResultSet rs = stmt.executeQuery();
 
             request.setAttribute("organic_cosmetics", rs);
-            request.getRequestDispatcher("../product/productlist.jsp").forward(request, response);
+            request.getRequestDispatcher("..Buyer/product/productlist.jsp").forward(request, response);
         } catch (SQLException e) {
             e.printStackTrace();
             request.setAttribute("error", e.getMessage());

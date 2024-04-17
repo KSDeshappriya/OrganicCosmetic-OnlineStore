@@ -14,7 +14,7 @@ and open the template in the editor.
         <script>
     window.onload = function() {
       // Redirect to another website
-      window.location.href = '/OrganicCosmetic-OnlineStore/home/index.jsp'; // Replace 'https://example.com' with the URL you want to redirect to
+      window.location.href = '/OrganicCosmetic-OnlineStore/Buyer/home/index.jsp'; // Replace 'https://example.com' with the URL you want to redirect to
     };
           </script>
     </head>
