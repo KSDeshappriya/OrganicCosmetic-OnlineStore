@@ -13,7 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="Buyer/product/assets/css/main.css" />
 	</head>
-	<body class="homepage is-preload">
+	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -65,11 +65,8 @@
 
 			<!-- Main -->
 				<section id="main" class="wrapper style3">
-					<div class="title">Control Panel </div>
-					</section>
+					<div class="title">Cart</div>
 					
-
-						
 
 						<!-- Features -->
 							<section id="features">

@@ -2277,12 +2277,16 @@ input, select, textarea {
 /* Main */
 
 /* Footer */
-
+	
 	#footer {
-		background: #275128db url("images/overlay.png");
+		
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
 		padding-bottom: 6em;
+		background-image: url("../../images/pic02.jpg");
+		background-repeat: no-repeat; 
+		background-size: cover;
+		
 	}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b, #footer a {

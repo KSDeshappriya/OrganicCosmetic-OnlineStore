@@ -209,7 +209,7 @@
 					<div class="title">The Endorsements</div>
 					<div class="container">
 						<div class="row aln-center">
-							<ul>
+						
 							<div class="col-4 col-12-medium">
 								<section class="highlight">
 									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
@@ -237,7 +237,7 @@
 									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 									<ul class="actions">
 										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>ek
+									
 								</section>
 							</div>
 						</div>
