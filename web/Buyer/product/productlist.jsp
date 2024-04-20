@@ -58,7 +58,8 @@
 								</li>
 								</li>
 							<li><a href="contactus.jsp">Contact Us</a></li>		
-							<li><a href="index.jsp">About Us</a></li>					
+							<li><a href="aboutus.jsp">About Us</a></li>		
+							<li><a href="article.jsp">Article</a></li>			
 							<li><a href="../../CartServlet?action=view">Cart</a></li>
 							</ul>
 						</nav>
@@ -96,11 +97,25 @@
                                                 
                                                      <c:forEach items="${products}" var="product">
       
-													<div class="col-4 col-12-medium">
+													<div class="col-4 col-12-medium" style="width:25%">
 														<section class="highlight">
 										
-                                                                                 <h3><a href="#">${product.getName()}</a></h3>										<c:choose>
-                                                                                <c:when test="${not empty product.image}">
+                                                                                 <p>Category: ${product.getCategory()}</p>
+                                                                                 <a href="#" class="image featured">
+                                                                                        <img src="${product.getImage()}" alt="" />
+                                                                                    </a>
+                                                                                 
+                                                                                            <h3><a href="#">${product.getName()}</a></h3>
+                                                      
+                                                  
+                                                                <br>"${product.getDescription()}"</p>
+                                                                <h3>$. ${product.getPrice()}</h3>
+                                                               <ul class="actions">
+										<li><a href="../../CartServlet?action=add&id=${product.getId()}" class="button style2">+ Add to cart</a></li>
+									</ul>
+                                                                        
+                                                                        <c:choose>
+                                                                                <c:when test="${not empty product.getImagedata()}">
                                                                                     <a href="#" class="image featured">
                                                                                         <img src="data:image/jpg;base64,${base64Image}" alt="" />
                                                                                     </a>
@@ -111,14 +126,7 @@
                                                                                     </a>
                                                                                 </c:otherwise>
                                                                             </c:choose>
-              
-                                                      
-                                                  <p>Category: ${product.getCategory()}</td>
-                                                                <br>"${product.getDescription()}"</p>
-                                                                <h3>$. ${product.getPrice()}</h3>
-                                                               <ul class="actions">
-										<li><a href="../../CartServlet?action=add&id=${product.getId()}" class="button style2">+ Add to cart</a></li>
-									</ul>	
+                                                                        
                                                                 </section>
                                                                 
                                                                 

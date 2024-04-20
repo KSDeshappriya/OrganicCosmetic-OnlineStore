@@ -39,13 +39,14 @@ public class DBConnection {
             // Process the result set and create Product objects
             while (resultSet.next()) {
                 int id = resultSet.getInt("ID");
-                byte[] imageData = getProductImageById(id);
+                byte[] imagedata = getProductImageById(id);
                 String name = resultSet.getString("product_name");
                 String category = resultSet.getString("category");
+                 String image = resultSet.getString("Image");
                  
                 String description = resultSet.getString("product_description");
                 double price = resultSet.getDouble("Price");
-                product product = new product( id, imageData, name, category, description, price);
+                product product = new product( id, imagedata, name, category, image, description, price);
                 products.add(product);
             }
 
@@ -80,13 +81,13 @@ public class DBConnection {
 
             if (resultSet.next()) {
                 int id = resultSet.getInt("ID");
-                byte[] imageData = getProductImageById(id);
+                byte[] imagedata = getProductImageById(id);
                 String name = resultSet.getString("product_name");
                 String category = resultSet.getString("category");
-                            
+                 String image = resultSet.getString("Image");           
                 String description = resultSet.getString("product_description");
                 double price = resultSet.getDouble("Price");
-                product = new product(id, imageData, name, category, description, price );
+                product = new product(id, imagedata, name, category,image, description, price );
             }
 
             // Close the resources
