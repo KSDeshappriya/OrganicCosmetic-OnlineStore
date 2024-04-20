@@ -19,7 +19,7 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<h1><a href="">About Us</a></h1>
+							<h1><a href="">Conatact Us</a></h1>
 							<p>A free responsive site template by HTML5 UP</p>
 						</div>
 
@@ -51,7 +51,8 @@
 							</li>
 		<!-- 				<li><a href="left-sidebar.html">Left Sidebar</a></li>		-->
 						<li class="current"><a href="contactus.jsp">Contact Us</a></li>		
-						<li><a href="aboutus.jsp">About Us</a></li>					
+						<li><a href="aboutus.jsp">About Us</a></li>	
+						<li><a href="article.jsp">Article</a></li>				
 						<li><a href="../../CartServlet?action=view">Cart</a></li>
 		<!-- 				<li><a href="no-sidebar.html">No Sidebar</a></li>			-->
 						</ul>

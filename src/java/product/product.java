@@ -15,17 +15,19 @@ public class product {
     private int id;
     private String name;
     private String category;
-    public byte[] image;
+    private String image;
+    public byte[] imagedata;
     private String description;
     private double price;
 
-    public product( int id, byte[] image, String name, String category , String description, double price) {
+    public product( int id, byte[] imagedata, String name, String category, String image , String description, double price) {
         
         this.id = id;
-        this.image= image;
+        this.imagedata= imagedata;
         this.name = name;
         this.category = category;
-         
+        this.image= image;
+
         this.description = description;
         this.price = price;
     }
@@ -34,8 +36,8 @@ public class product {
         return id;
     }
     
-    public byte[] getImage() {
-        return image;
+    public byte[] getImagedata() {
+        return imagedata;
     }
 
     public String getName() {
@@ -44,6 +46,10 @@ public class product {
 
     public String getCategory() {
         return category;
+    }
+    
+     public String getImage() {
+        return image;
     }
     
 

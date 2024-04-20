@@ -53,7 +53,8 @@
 								</li>
 			<!-- 				<li><a href="left-sidebar.html">Left Sidebar</a></li>		-->
 							<li><a href="Buyer/product/contactus.jsp">Contact Us</a></li>		
-							<li><a href="Buyer/product/aboutus.jsp">About Us</a></li>					
+							<li><a href="Buyer/product/aboutus.jsp">About Us</a></li>	
+							<li><a href="Buyer/product/article.jsp">Article</a></li>				
 							<li class="current"><a href="../../CartServlet?action=view">Cart</a></li>
 			<!-- 				<li><a href="no-sidebar.html">No Sidebar</a></li>			-->
 							</ul>

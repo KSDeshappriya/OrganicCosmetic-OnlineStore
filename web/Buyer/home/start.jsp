@@ -354,6 +354,17 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Function to redirect to another page after 5 seconds
+				function redirect() {
+					setTimeout(function() {
+						window.location.href = '../product/home.jsp'; // Replace with your destination URL
+					}, 4000); // 4000 milliseconds = 4 seconds
+				}
+		
+				// Call the redirect function when the page loads
+				window.onload = redirect;
+			</script>
 
 	</body>
 </html>

@@ -10,12 +10,15 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<section id="header" class="wrapper">
+					
 
 					<!-- Logo -->
 						<div id="logo">
@@ -52,7 +55,8 @@
 							</li>
 							</li>
 						<li><a href="contactus.jsp">Contact Us</a></li>		
-						<li><a href="index.jsp">About Us</a></li>					
+						<li><a href="aboutus.jsp">About Us</a></li>	
+						<li><a href="article.jsp">Article</a></li>				
 						<li><a href="../../CartServlet?action=view">Cart</a></li>
 						</ul>
 					</nav>
@@ -65,8 +69,10 @@
 					<div class="container">
 						<p class="style1">So in case you were wondering what this is all about ...</p>
 						<div class="container">
-							<div class="row aln-center">
-								<div class="col-4 col-12-medium">
+							<div class="row aln-center mySlides w3-animate-right" >
+								<!------------------------------------------------->
+
+								<div class="col-4 col-12-medium" style="width:25%">
 									<section class="highlight">
 										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
 										<h3><a href="#">Aliquam diam consequat</a></h3>
@@ -76,7 +82,7 @@
 										</ul>
 									</section>
 								</div>
-								<div class="col-4 col-12-medium">
+								<div class="col-4 col-12-medium" style="width:25%">
 									<section class="highlight">
 										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
 										<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
@@ -86,7 +92,7 @@
 										</ul>
 									</section>
 								</div>
-								<div class="col-4 col-12-medium">
+								<div class="col-4 col-12-medium" style="width:25%">
 									<section class="highlight">
 										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
 										<h3><a href="#">Mattis tempus lorem</a></h3>
@@ -96,7 +102,153 @@
 										</ul>
 									</section>
 								</div>
+								<div class="col-4 col-12-medium" style="width:25%">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+										<h3><a href="#">Mattis tempus lorem</a></h3>
+										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+										<ul class="actions">
+											<li><a href="#" class="button style1">Learn More</a></li>
+										</ul>
+									</section>
+								</div>
+
 							</div>
+
+							<div class="row aln-center mySlides w3-animate-right" >
+								<!------------------------------------------------->
+
+								<div class="col-4 col-12-medium" style="width:25%">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+										<h3><a href="#">Mattis tempus lorem</a></h3>
+										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+										<ul class="actions">
+											<li><a href="#" class="button style1">Learn More</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-4 col-12-medium" style="width:25%">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+										<h3><a href="#">Mattis tempus lorem</a></h3>
+										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+										<ul class="actions">
+											<li><a href="#" class="button style1">Learn More</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-4 col-12-medium" style="width:25%">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+										<h3><a href="#">Aliquam diam consequat</a></h3>
+										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet.</p>
+										<ul class="actions">
+											<li><a href="#" class="button style1">Learn More</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-4 col-12-medium" style="width:25%">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
+										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+										<ul class="actions">
+											<li><a href="#" class="button style1">Learn More</a></li>
+										</ul>
+									</section>
+								</div>
+								
+
+							</div>
+
+							<div class="row aln-center mySlides w3-animate-right" >
+								<!------------------------------------------------->
+
+								<div class="col-4 col-12-medium" style="width:25%">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
+										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+										<ul class="actions">
+											<li><a href="#" class="button style1">Learn More</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-4 col-12-medium" style="width:25%">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+										<h3><a href="#">Mattis tempus lorem</a></h3>
+										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+										<ul class="actions">
+											<li><a href="#" class="button style1">Learn More</a></li>
+										</ul>
+									</section>
+								</div>
+								
+								
+								<div class="col-4 col-12-medium" style="width:25%">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+										<h3><a href="#">Mattis tempus lorem</a></h3>
+										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+										<ul class="actions">
+											<li><a href="#" class="button style1">Learn More</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-4 col-12-medium" style="width:25%">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+										<h3><a href="#">Aliquam diam consequat</a></h3>
+										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet.</p>
+										<ul class="actions">
+											<li><a href="#" class="button style1">Learn More</a></li>
+										</ul>
+									</section>
+								</div>
+
+							</div>
+							
+							<button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  							<button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+<!------------------------------------------------->
+<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+	
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+	
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  if (n > x.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "";  
+	}
+
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	}
+	myIndex++;
+	if (myIndex > x.length) {myIndex = 1}    
+	x[myIndex-1].style.display = "";  
+	setTimeout(carousel, 3000);    
+}
+	</script>
+	
+	<!------------------------------------------------->							
 							
 						<!-- <p class="style2">
 							Escape Velocity is a free responsive<br class="mobile-hide" />
@@ -192,17 +344,12 @@
 												<p>Tempus feugiat veroeros sed nullam dolore</p>
 											</header>
 											<a href="#" class="image featured">
-												<img src="images/pic01.jpg" alt="" />
+												<img src="images/banner1.jpg" alt="" />
 											</a>
 											<p>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
 											odio eleifend. Duis commodo fringilla commodo. Aliquam erat volutpat. Vestibulum
 											facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
 											tempus euismod. Vestibulum ante ipsum primis in faucibus.</p>
-											<p>Phasellus nisl nisl, varius id porttitor sed, pellentesque ac orci. Pellentesque
-											senectus et netus et malesuada fames ac turpis egestas. Morbi
-											bibendum malesuada aliquam elit imperdiet. Aliquam eu nibh
-											lorem, eget gravida mi. Duis odio diam, luctus et vulputate vitae, vehicula ac dolor.
-											</p>
 										</article>
 										<div class="row gtr-150">
 											<div class="col-6 col-12-small">
@@ -234,7 +381,7 @@
 													<header>
 														<h2>Magna pulvinar tempus</h2>
 													</header>
-													<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+													<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
 													<p>Rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
 													eget urna nibh. Curabitur non fringilla nisl.
 													</p>
@@ -246,7 +393,7 @@
 													<header>
 														<h2>Magna pulvinar tempus</h2>
 													</header>
-													<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+													<a href="#" class="image featured"><img src="images/pic07_2.jpg" alt="" /></a>
 													<p>Rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
 													eget urna nibh. Curabitur non fringilla nisl.
 													</p>
@@ -267,8 +414,8 @@
 					<div class="container">
 
 						<!-- Image -->
-							<a href="#" class="image featured">
-								<img src="images/pic01.jpg" alt="" />
+							<a href="#" class="image featured ">
+								<img class="w3-animate-fading" src="images/banner4.jpg" alt="" />
 							</a>
 
 						<!-- Features -->
@@ -382,7 +529,7 @@
 										<p>Tempus feugiat veroeros sed nullam dolore</p>
 									</header>
 									<a href="#" class="image featured">
-										<img src="images/pic01.jpg" alt="" />
+										<img src="images/banner2.jpg" alt="" />
 									</a>
 									<p>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
 									odio eleifend. Duis commodo fringilla commodo. Aliquam erat volutpat. Vestibulum
