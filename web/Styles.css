@@ -8,12 +8,14 @@ body {
 .header-section {
     background-image:url('images/Cover.jpg');
     background-size:cover;
-    height: 50vh;
+    height: 65vh;
     display: flex;
     justify-content:center;
     align-items: center;
     text-align: center;
     position: relative;
+    background-color: #00000059;
+    background-blend-mode: overlay;
 }
 
 .navbar {
@@ -25,8 +27,8 @@ body {
 }
 
 .navbar-brand img {
-    max-height: 5vh;
-    margin-right: 8px;
+    height: 8vh;
+    margin-left: 40px;
 }
 
 .welcome-text {
@@ -50,8 +52,8 @@ body {
 
 .btn-cool {
     margin-top: 2%;
-    border: 3px solid #90caf9;
-    color: whitesmoke;
+    border: 3px solid #f1c166;
+    color: rgb(255, 255, 255);
     border-radius: 20px;
     font-size: 3vh;
     background-color: transparent;
@@ -61,8 +63,8 @@ body {
 }
 
 .btn-cool:hover {
-    background-color: #1e88e5;
-    border: 3px solid #1e88e5;
+    background-color: #f1c166;
+    border: 3px solid #f1c166;
     color: white;
 }
 
