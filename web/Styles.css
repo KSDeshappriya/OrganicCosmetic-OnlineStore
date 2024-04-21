@@ -6,7 +6,7 @@ body {
 }
 
 .header-section {
-    background-image:url('images/HeadBg.jpg');
+    background-image:url('images/Cover.jpg');
     background-size: contain;
     height: 50vh;
     display: flex;
