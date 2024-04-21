@@ -217,7 +217,7 @@ canvas {
 
 .container5 {
     max-width: 1300px;
-    margin: auto;
+    margin: 15px;
     animation: slideIn 1.5s forwards; 
     opacity: 0; 
 } 
