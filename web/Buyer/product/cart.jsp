@@ -12,6 +12,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="Buyer/product/assets/css/main.css" />
+		
 	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
@@ -55,7 +56,9 @@
 							<li><a href="Buyer/product/contactus.jsp">Contact Us</a></li>		
 							<li><a href="Buyer/product/aboutus.jsp">About Us</a></li>	
 							<li><a href="Buyer/product/article.jsp">Article</a></li>				
-							<li class="current"><a href="../../CartServlet?action=view">Cart</a></li>
+							<li><a href="" style="display: none;">Empty Space</a></li>			
+							<li><a class="current" href="../../CartServlet?action=view"><img src="images/cart2.png">Cart</a></li>
+							<li><a href="../../Admin/auth/login.jsp"><img src="images/user2.png">Login</a></li>
 			<!-- 				<li><a href="no-sidebar.html">No Sidebar</a></li>			-->
 							</ul>
 						</nav>
@@ -103,13 +106,13 @@
                                                                   <c:forEach items="${products}" var="product">
                                                                       
                                                                                    <tr>     
-                                                                                                <td><p> ${product.getId()} </p></td>
-																								<td><p> ${product.getImage()} </p></td>
-                                                                                                <td><p> ${product.getName()} </p></td>
-                                                                                                <td><p> ${product.getCategory()} </p></td>
-                                                                                                <td><p> ${product.getDescription()} </p></td>
-                                                                                                <td><p>$. ${product.getPrice()} </p></td>
-																								<td><input style="height: 30px; width:5px;" class="button style2 " name="qty" type="number" max="5" min="1"></td>
+                                                                                                <td style="vertical-align: middle"><p> ${product.getId()} </p></td>
+																								<td style="vertical-align: middle"><p><img class="image" src=" ${product.getImage()}" style="width:50%"> </p></td>
+                                                                                                <td style="vertical-align: middle"><p> ${product.getName()} </p></td>
+                                                                                                <td style="vertical-align: middle"><p> ${product.getCategory()} </p></td>
+                                                                                                <td style="vertical-align: middle"><p> ${product.getDescription()} </p></td>
+                                                                                                <td style="vertical-align: middle"><p>$. ${product.getPrice()} </p></td>
+																								<td style="vertical-align: middle"><input style="height: 30px; width:5px;" class="button style2 " name="qty" type="number" max="5" min="1"></td>
 																							</tr>
                                                                                 
                                                                         </c:forEach> 

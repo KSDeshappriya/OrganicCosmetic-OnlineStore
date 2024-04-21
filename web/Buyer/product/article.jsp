@@ -53,8 +53,10 @@
 		<!-- 				<li><a href="left-sidebar.html">Left Sidebar</a></li>		-->
 						<li class="current"><a href="contactus.jsp">Contact Us</a></li>		
 						<li><a href="aboutus.jsp">About Us</a></li>	
-						<li><a href="article.jsp">Article</a></li>				
-						<li><a href="../../CartServlet?action=view">Cart</a></li>
+						<li><a href="article.jsp">Article</a></li>	
+						<li><a href="" style="display: none;">Empty Space</a></li>			
+						<li><a href="../../CartServlet?action=view"><img src="images/cart2.png">Cart</a></li>
+						<li><a href="../../Admin/auth/login.jsp"><img src="images/user2.png">Login</a></li>
 		<!-- 				<li><a href="article.jsp">Article</a></li>			-->
 						</ul>
 					</nav>
@@ -77,7 +79,7 @@
 									<h3><a href="#">*Indulge Your Hands with Rose Hand Cream*</a></h3>
 									<p>Introducing "Rose Hand Cream," a luxurious treat...</p>
 									<ul class="actions">
-										<li><a href="#" class="button style2">Learn More</a></li>
+										<li><a href="#" class="button style1">Learn More</a></li>
 									</ul>
 								</section>
 							</div>
@@ -87,7 +89,7 @@
 									<h3><a href="#">*Reveal Soft, Pink Lips with Pink Lips Scrub + Balm Duo*</a></h3>
 									<p>Introducing the ultimate lip care duo: Pink Lips Scrub + Balm...</p>
 									<ul class="actions">
-										<li><a href="#" class="button style2">Learn More</a></li>
+										<li><a href="#" class="button style1">Learn More</a></li>
 									</ul>
 								</section>
 							</div>
@@ -97,7 +99,7 @@
 									<h3><a href="#">*Indulge in Frosty Bliss with Sisiliana Ice Lotion*</a></h3>
 									<p>Introducing "Sisiliana Ice Lotion," a tantalizing treat...</p>
 									<ul class="actions">
-										<li><a href="#" class="button style2">Learn More</a></li>
+										<li><a href="#" class="button style1">Learn More</a></li>
 									</ul>
 								</section>
 							</div>
@@ -114,7 +116,7 @@
 									<h3><a href="#">*Unveil Youthful Radiance with Samaya Under Eye Cream*</a></h3>
 									<p>Introducing "Samaya Under Eye Cream," a transformative elixir...</p>
 									<ul class="actions">
-										<li><a href="#" class="button style2">Learn More</a></li>
+										<li><a href="#" class="button style1">Learn More</a></li>
 									</ul>
 								</section>
 							</div>
@@ -124,7 +126,7 @@
 									<h3><a href="#">*Embrace Radiant Skin with RadiantGlow Fairness Face Oil*</a></h3>
 									<p>Introducing "RadiantGlow Fairness Face Oil," a luxurious...</p>
 									<ul class="actions">
-										<li><a href="#" class="button style2">Learn More</a></li>
+										<li><a href="#" class="button style1">Learn More</a></li>
 									</ul>
 								</section>
 							</div>
@@ -134,7 +136,7 @@
 									<h3><a href="#">*Nourish Your Beard with Roots Beard Growth Serum Nurture*</a></h3>
 									<p>Introducing "Roots Beard Growth Serum," a powerful elixir...</p>
 									<ul class="actions">
-										<li><a href="#" class="button style2">Learn More</a></li>
+										<li><a href="#" class="button style1">Learn More</a></li>
 									</ul>
 								</section>
 							</div>
@@ -211,7 +213,7 @@ setTimeout(carousel, 3000);
 						</p>
 						<p><b>Transform your under-eye area with Samaya's revolutionary formula and discover the secret to youthful, radiant eyes...</b></p>
 						<ul class="actions">
-							<li><a href="#" class="button style2">Learn More</a></li>
+							<li><a href="#" class="button style1">Learn More</a></li>
 						</ul>
 					</section>
 				</div>
@@ -232,7 +234,7 @@ setTimeout(carousel, 3000);
 							<p>
 								<b>Illuminate your complexion and reveal the beauty of radiant skin with RadiantGlow Fairness Face Oil...</b></p>
 						<ul class="actions">
-							<li><a href="#" class="button style2">Learn More</a></li>
+							<li><a href="#" class="button style1">Learn More</a></li>
 						</ul>
 					</section>
 				</div>
@@ -254,7 +256,7 @@ setTimeout(carousel, 3000);
 						</p>
 						<p><b>Unlock the full potential of your beard with Roots Beard Growth Serum...</b></p>
 						<ul class="actions">
-							<li><a href="#" class="button style2">Learn More</a></li>
+							<li><a href="#" class="button style1">Learn More</a></li>
 						</ul>
 					</section>
 				</div>
@@ -278,7 +280,7 @@ setTimeout(carousel, 3000);
 						</p>
 						<p><b>Experience the luxurious pampering of Rose Hand Cream and treat your hands to the nourishment they deserve...</b></p>
 						<ul class="actions">
-							<li><a href="#" class="button style2">Learn More</a></li>
+							<li><a href="#" class="button style1">Learn More</a></li>
 						</ul>
 					</section>
 				</div>
@@ -299,7 +301,7 @@ setTimeout(carousel, 3000);
 						</p>
 						<p><b>Experience the transformative power of Pink Lips Scrub + Balm Duo and unlock the secret to soft, pink lips...</b></p>
 						<ul class="actions">
-							<li><a href="#" class="button style2">Learn More</a></li>
+							<li><a href="#" class="button style1">Learn More</a></li>
 						</ul>
 					</section>
 				</div>
@@ -322,7 +324,7 @@ setTimeout(carousel, 3000);
 						</p>
 						<p><b>Experience the exhilarating sensation of Sisiliana Ice Lotion and treat your skin to a frosty indulgence like never before...</b></p>
 						<ul class="actions">
-							<li><a href="#" class="button style2">Learn More</a></li>
+							<li><a href="#" class="button style1">Learn More</a></li>
 						</ul>
 					</section>
 				</div>
