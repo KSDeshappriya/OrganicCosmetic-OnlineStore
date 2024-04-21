@@ -57,7 +57,9 @@
 						<li><a href="contactus.jsp">Contact Us</a></li>		
 						<li><a href="aboutus.jsp">About Us</a></li>	
 						<li><a href="article.jsp">Article</a></li>				
-						<li><a href="../../CartServlet?action=view">Cart</a></li>
+						<li><a href="" style="display: none;">Empty Space</a></li>			
+						<li><a href="../../CartServlet?action=view"><img src="images/cart2.png">Cart</a></li>
+						<li><a href="../../Admin/auth/login.jsp"><img src="images/user2.png">Login</a></li>
 						</ul>
 					</nav>
 

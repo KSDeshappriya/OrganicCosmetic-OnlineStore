@@ -14,8 +14,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href=" assets/css/main.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
@@ -60,7 +61,9 @@
 							<li><a href="contactus.jsp">Contact Us</a></li>		
 							<li><a href="aboutus.jsp">About Us</a></li>		
 							<li><a href="article.jsp">Article</a></li>			
-							<li><a href="../../CartServlet?action=view">Cart</a></li>
+							<li><a href="" style="display: none;">Empty Space</a></li>			
+							<li><a href="../../CartServlet?action=view"><img src="images/cart2.png">Cart</a></li>
+							<li><a href="../../Admin/auth/login.jsp"><img src="images/user2.png">Login</a></li>
 							</ul>
 						</nav>
 
