@@ -7,12 +7,11 @@ body {
 
 .header-section {
     background-image:url('images/Cover.jpg');
-    background-size: contain;
+    background-size:cover;
     height: 50vh;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    color: whitesmoke;
     text-align: center;
     position: relative;
 }
