@@ -372,8 +372,7 @@
 													<a href="article.jsp" class="image featured"><img src="images/Rose_glow_day_cream.jpg" alt="" /></a>
 													<p>Experience radiant hydration with our Rose Glow Day Cream. Infused with rose petals,
 														 it revitalizes, protects, and leaves skin dewy. Lightweight, yet deeply moisturizing,
-														  it absorbs quickly for all-day hydration. Transport yourself to tranquility with
-														   its enchanting aroma.</p>
+														  it absorbs quickly for all-day hydration.</p>
 													<a href="article.jsp" class="button style1">More</a>
 												</section>
 											</div>
@@ -386,33 +385,32 @@
 													<p>Elevate your routine with our Magic Moringa Face Wash. Infused with moringa,
 														 it gently cleanses and revitalizes, leaving skin refreshed and glowing. 
 														 Suitable for all skin types, it removes impurities without stripping
-														  moisture. Experience the magic of moringa for a radiant complexion.</p>
+														  moisture. </p>
 													<a href="article.jsp" class="button style1">More</a>
 												</section>
 											</div>
 											<div class="col-6 col-12-small">
 												<section class="box">
 													<header>
-														<h2>Rose glow day cream</h2>
+														<h2>Kasthuri Facial Hair</h2>
 													</header>
-													<a href="article.jsp" class="image featured"><img src="images/Rose_glow_day_cream.jpg" alt="" /></a>
+													<a href="article.jsp" class="image featured"><img src="images/Kasthuri-Facial-Hair.jpg" alt="" /></a>
 													<p>Experience radiant hydration with our Rose Glow Day Cream. Infused with rose petals,
 														 it revitalizes, protects, and leaves skin dewy. Lightweight, yet deeply moisturizing,
-														  it absorbs quickly for all-day hydration. Transport yourself to tranquility with
-														   its enchanting aroma.</p>
+														  it absorbs quickly for all-day hydration. </p>
 													<a href="article.jsp" class="button style1">More</a>
 												</section>
 											</div>
 											<div class="col-6 col-12-small">
 												<section class="box">
 													<header>
-														<h2>Magic Moringa face wash</h2>
+														<h2>Mantra Miracle Hair Growth Oil</h2>
 													</header>
-													<a href="article.jsp" class="image featured"><img src="images/Magic_Moringa _face_wash.jpg" alt="" /></a>
+													<a href="article.jsp" class="image featured"><img src="images/Mantra-Miracle-Hair-Growth-Oil.jpg" alt="" /></a>
 													<p>Elevate your routine with our Magic Moringa Face Wash. Infused with moringa,
 														 it gently cleanses and revitalizes, leaving skin refreshed and glowing. 
 														 Suitable for all skin types, it removes impurities without stripping
-														  moisture. Experience the magic of moringa for a radiant complexion.</p>
+														  moisture.</p>
 													<a href="article.jsp" class="button style1">More</a>
 												</section>
 											</div>
@@ -495,38 +493,144 @@
 				<section id="highlights" class="wrapper style2">
 					<div class="title">The Endorsements</div>
 					<div class="container">
-						<div class="row aln-center">
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-									<h3><a href="#">Aliquam diam consequat</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Mattis tempus lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet .</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>
-								</section>
+						<!-------------------------------->		
+
+					<div class="row aln-center mySlides3 w3-animate-right" >		
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+								<h3><a href="#">Aliquam diam consequat</a></h3>
+								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
+								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+								<h3><a href="#">Mattis tempus lorem</a></h3>
+								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet .</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
 							</div>
 						</div>
+					<div class="row aln-center mySlides3 w3-animate-right" >
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+								<h3><a href="#">Aliquam diam consequat</a></h3>
+								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
+								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+								<h3><a href="#">Mattis tempus lorem</a></h3>
+								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet .</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+					</div>
+					<div class="row aln-center mySlides3 w3-animate-right" >
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+								<h3><a href="#">Aliquam diam consequat</a></h3>
+								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
+								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+								<h3><a href="#">Mattis tempus lorem</a></h3>
+								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet .</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+					</div>	
+		
+		<button class="w3-button w3-white w3-display-left" onclick="plusDivs3(-1)">&#10098;</button>
+		  <button class="w3-button w3-white w3-display-right" onclick="plusDivs3(1)">&#10099;</button>
+<!----------------------------------------------->
+<script>
+var slideIndex3 = 1;
+showDivs3(slideIndex3);
+
+function plusDivs3(n3) {
+  showDivs3(slideIndex3 += n3);
+}
+
+function showDivs3(n3) {
+  var i3;
+  var x3 = document.getElementsByClassName("mySlides3");
+  if (n3 > x3.length) {slideIndex3 = 1}
+  if (n3 < 1) {slideIndex2 = x3.length}
+  for (i3 = 0; i3 < x3.length; i3++) {
+	x3[i3].style.display = "none";  
+  }
+  x3[slideIndex3-1].style.display = "";  
+}
+
+var myIndex3 = 0;
+carousel3();
+
+function carousel3() {
+var i3;
+var x3 = document.getElementsByClassName("mySlides3");
+for (i3 = 0; i3 < x3.length; i3++) {
+	x3[i3].style.display = "none";  
+}
+myIndex3++;
+if (myIndex3 > x3.length) {myIndex3 = 1}    
+x3[myIndex3-1].style.display = "";  
+setTimeout(carousel3, 3000);    
+}
+</script>
+<!------------------------------------------------>
+			
 					</div>
 				</section>
 
@@ -581,7 +685,7 @@
 											<header>
 												<h2>Magna pulvinar tempus</h2>
 											</header>
-											<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+											<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
 											<p>Rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
 											eget urna nibh. Curabitur non fringilla nisl. </p>
 											<a href="#" class="button style1">More</a>
@@ -673,7 +777,9 @@
 		<section id="highlights" class="wrapper style2">
 			<div class="title">The Endorsements</div>
 			<div class="container">
-				<div class="row aln-center">
+		<!-------------------------------->		
+
+			<div class="row aln-center mySlides2 w3-animate-right" >		
 					<div class="col-4 col-12-medium">
 						<section class="highlight">
 							<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
@@ -704,7 +810,79 @@
 							</ul>
 						</section>
 					</div>
+			</div>
+			<div class="row aln-center mySlides2 w3-animate-right" >
+				<div class="col-4 col-12-medium">
+					<section class="highlight">
+						<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+						<h3><a href="#">Aliquam diam consequat</a></h3>
+						<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+						<ul class="actions">
+							<li><a href="#" class="button style1">Learn More</a></li>
+						</ul>
+					</section>
 				</div>
+				<div class="col-4 col-12-medium">
+					<section class="highlight">
+						<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+						<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
+						<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+						<ul class="actions">
+							<li><a href="#" class="button style1">Learn More</a></li>
+						</ul>
+					</section>
+				</div>
+				<div class="col-4 col-12-medium">
+					<section class="highlight">
+						<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+						<h3><a href="#">Mattis tempus lorem</a></h3>
+						<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet .</p>
+						<ul class="actions">
+							<li><a href="#" class="button style1">Learn More</a></li>
+						</ul>
+					</section>
+				</div>
+			</div>	
+			
+			<button class="w3-button w3-white w3-display-left" onclick="plusDivs2(-1)">&#10096;</button>
+  			<button class="w3-button w3-white w3-display-right" onclick="plusDivs2(1)">&#10097;</button>
+<!----------------------------------------------->
+<script>
+	var slideIndex2 = 1;
+	showDivs2(slideIndex2);
+	
+	function plusDivs2(n2) {
+	  showDivs2(slideIndex2 += n2);
+	}
+	
+	function showDivs2(n2) {
+	  var i2;
+	  var x2 = document.getElementsByClassName("mySlides2");
+	  if (n2 > x2.length) {slideIndex2 = 1}
+	  if (n2 < 1) {slideIndex2 = x2.length}
+	  for (i2 = 0; i2 < x2.length; i2++) {
+		x2[i2].style.display = "none";  
+	  }
+	  x2[slideIndex2-1].style.display = "";  
+	}
+
+	var myIndex2 = 0;
+	carousel2();
+
+	function carousel2() {
+	var i2;
+	var x2 = document.getElementsByClassName("mySlides2");
+	for (i2 = 0; i2 < x2.length; i2++) {
+		x2[i2].style.display = "none";  
+	}
+	myIndex2++;
+	if (myIndex2 > x2.length) {myIndex2 = 1}    
+	x2[myIndex2-1].style.display = "";  
+	setTimeout(carousel2, 3000);    
+}
+	</script>
+<!------------------------------------------------>
+				
 			</div>
 		</section>
 
