@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
-    <link href="Styles.css" rel='stylesheet'>
+    <link href='Styles.css' rel='stylesheet'>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
@@ -125,4 +125,3 @@
 </body>
 
 </html>
-
