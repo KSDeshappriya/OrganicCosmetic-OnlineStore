@@ -18,20 +18,20 @@
 
     <nav class="navbar navbar-expand-lg navbar-transparent">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.jsp">
                 <img src="images/logo.png" alt="Logo" />
             </a>
  
             <div class="nav">
-                <a href="Oder-Management.html" class="btn btn-coolNav mx-2">
+                <a href="Oder-Management.jsp" class="btn btn-coolNav mx-2">
                     <i class='bx bxs-shopping-bag icon-box'></i>
                     Order Management
                 </a>
-                <a href="Product-Management.html" class="btn btn-coolNav">
+                <a href="Product-Management.jsp" class="btn btn-coolNav">
                     <i class='bx bxs-package icon-box'></i>
                     Product Management
                 </a>
-                <a href="Sales-Analitics.html" style="font-size: 2.1vh;" class="btn btn-coolNav">
+                <a href="Sales-Analitics.jsp" style="font-size: 2.1vh;" class="btn btn-coolNav">
                     <i class='bx bx-line-chart icon-box'></i>
                     Sales Analytics
                 </a>

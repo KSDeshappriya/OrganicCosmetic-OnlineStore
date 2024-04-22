@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
-    <link href='Styles.css' rel='stylesheet'>
+    <link href="Styles.css" rel='stylesheet'>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
@@ -19,20 +19,20 @@
         <section class="header-section">
             <nav class="navbar navbar-expand-lg navbar-transparent">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.jsp">
                         <img src="images/logo.png" alt="Logo" />
                     </a>
 
                     <div class="nav">
-                        <a href="Oder-Management.html" class="btn btn-coolNav mx-2">
+                        <a href="Oder-Management.jsp" class="btn btn-coolNav mx-2">
                             <i class='bx bxs-shopping-bag icon-box'></i>
                             Order Management
                         </a>
-                        <a href="Product-Management.html" class="btn btn-coolNav">
+                        <a href="Product-Management.jsp" class="btn btn-coolNav">
                             <i class='bx bxs-package icon-box'></i>
                             Product Management
                         </a>
-                        <a href="Sales-Analitics.html" style="font-size: 2.1vh;" class="btn btn-coolNav">
+                        <a href="Sales-Analitics.jsp" style="font-size: 2.1vh;" class="btn btn-coolNav">
                             <i class='bx bx-line-chart icon-box'></i>
                             Sales Analytics
                         </a>
@@ -66,12 +66,12 @@
                 <div class="col-md-6">
                     <h2>Product Management</h2>
                     <p>Click below to manage products:</p>
-                    <a href="Product-Management.html" class="btn btn-custom">Product Management</a>
+                    <a href="Product-Management.jsp" class="btn btn-custom">Product Management</a>
                 </div>
                 <div class="OderMng col-md-6">
                     <h2>Order Management</h2>
                     <p>Click below to manage orders:</p>
-                    <a href="Oder-Management.html" class="btn btn-custom">Order Management</a>
+                    <a href="Oder-Management.jsp" class="btn btn-custom">Order Management</a>
                 </div>
             </div>
 
@@ -125,3 +125,4 @@
 </body>
 
 </html>
+
