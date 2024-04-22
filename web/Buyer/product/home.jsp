@@ -269,7 +269,7 @@
 			
 				<!-- Main 1-->
 				<section id="main" class="wrapper style2">
-					<div class="title">Left Sidebar</div>
+					<div class="title">Pure-Potent-Purposeful</div>
 					<div class="container">
 						<div class="row gtr-150">
 							<div class="col-4 col-12-medium">
@@ -278,59 +278,62 @@
 									<div id="sidebar">
 										<section class="box">
 											<header>
-												<h2>Ipsum nullam luctus</h2>
+												<h2>Get in Touch</h2>
 											</header>
-											<p>Malesuada quis eget eros. Nullam sodales cursus sapien, id consequat
-											leo suscipit ut. Praesent id turpis vitae turpis pretium ultricies. Vestibulum sit
-											amet risus elit.</p>
-											<a href="#" class="button style1">Learn More</a>
-										</section>
+											<p>Have questions? Reach out to us today for assistance.
+												Our team is here to help you with any inquiries or 
+												concerns you may have. Contact us now!</p>
+										   
+												<a href="contactus.jsp" class="button style1">Contact Now</a>
+											</section>
 										<section class="box">
 											<header>
-												<h2>Vitae turpis consequat</h2>
+												<h2>Product Success Stories</h2>
 											</header>
 											<ul class="style2">
 												<li>
 													<article class="box post-excerpt">
-														<a href="#" class="image left"><img src="images/pic08.jpg" alt="" /></a>
-														<h3><a href="#">Diam odio lorem</a></h3>
-														<p>Duis odio diam, luctus et vulputate vitae, vehicula ac dolor. Pellentesque at urna eget tellus sed etiam.</p>
-														
+														<a href="#" class="image left"><img src="images/market_impact.png" alt="" /></a>
+														<h3><a href="#">Market Impact</a></h3>
+														<p>Leading performance driving growth 
+															in industry sectors, delivering remarkable market impact.</p>
+																											
 													</article>
 												</li>
 												<li>
 													<article class="box post-excerpt">
-														<a href="#" class="image left"><img src="images/pic09.jpg" alt="" /></a>
-														<h3><a href="#">Sed duis consequat</a></h3>
-														<p>Duis odio diam, luctus et vulputate vitae, vehicula ac dolor. Pellentesque at urna eget tellus sed etiam.</p>
+														<a href="" class="image left"><img src="images/Customer_Satisfaction.png" alt="" /></a>
+														<h3><a href="#">Customer Satisfaction</a></h3>
+														<p>Unmatched client feedback fostering brand loyalty,
+															 ensuring unparalleled customer satisfaction and retention.</p>
 													</article>
 												</li>
 												<li>
 													<article class="box post-excerpt">
-														<a href="#" class="image left"><img src="images/pic10.jpg" alt="" /></a>
-														<h3><a href="#">Tellus nulla volutpat</a></h3>
-														<p>Duis odio diam, luctus et vulputate vitae, vehicula ac dolor. Pellentesque at urna eget tellus sed etiam.</p>
+														<a href="" class="image left"><img src="images/Innovative_Solutions.png" alt="" /></a>
+														<h3><a href="#">Innovative Solutions</a></h3>
+														<p> Pioneering technology redefining industry standards, 
+															offering revolutionary and innovative solutions for market challenges.</p>
 													</article>
 												</li>
 											</ul>
-											<a href="#" class="button style1">Archives</a>
+											<a href="contactus.jsp" class="button style1">Archives</a>
 										</section>
 										<section class="box">
 											<header>
-												<h2>Magna diam vehicula</h2>
+												<h2>ARTICLE BLOGS</h2>
 											</header>
 											<ul class="style3">
-												<li><a href="#">Nulla iaculis egestas varius</a></li>
-												<li><a href="#">Augue massa feugiat quam pretium</a></li>
-												<li><a href="#">Orci sem vel libero cras nisi odio</a></li>
-												<li><a href="#">Sed hendrerit massa nam mattis</a></li>
-												<li><a href="#">Turpis vel leo accumsan aliquet</a></li>
-												<li><a href="#">Dapibus mi fermentum fusce non</a></li>
-												<li><a href="#">Arcu laoreet sapien tempus</a></li>
-												<li><a href="#">Nulla iaculis egestas varius</a></li>
-												<li><a href="#">Augue massa feugiat quam pretium</a></li>
-												<li><a href="#">Orci sem vel libero cras nisi odio</a></li>
-												<li><a href="#">Sed hendrerit massa nam mattis</a></li>
+												<li><a href="article.jsp">Unveil Youthful Radiance with Samaya Under Eye Cream</a></li>
+												<li><a href="article.jsp">Embrace Radiant Skin with RadiantGlow Fairness Face Oil</a></li>
+												<li><a href="article.jsp">Nourish Your Beard with Roots Beard Growth Serum</a></li>
+												<li><a href="article.jsp">Indulge Your Hands with Rose Hand Cream</a></li>
+												<li><a href="article.jsp">Reveal Soft, Pink Lips with Pink Lips Scrub + Balm Duo</a></li>
+												<li><a href="article.jsp">Indulge in Frosty Bliss with Sisiliana Ice Lotion</a></li>
+												<li><a href="home.jsp">Industry-leading performance enhancing business growth</a></li>
+												<li><a href="home.jsp">Exceptional client feedback drives loyalty and brand recognition</a></li>
+												<li><a href="home.jsp">Cutting-edge technology revolutionizing market standards</a></li>
+												<li><a href="home.jsp">Empowering Beauty: Nature's Finest Creations Await</a></li>
 											</ul>
 										</section>
 									</div>
@@ -342,64 +345,75 @@
 									<div id="content">
 										<article class="box post">
 											<header class="style1">
-												<h2>Lorem ipsum dolor sit amet magna egestas morbi bibendum sed malesuada</h2>
-												<p>Tempus feugiat veroeros sed nullam dolore</p>
+												<h2>Empowering Beauty -<br> Nature's Finest Creations Await</h2>
+												<p>Crafted with Care, Powered Naturally</p>
 											</header>
 											<a href="#" class="image featured">
-												<img src="images/banner1.jpg" alt="" />
+												<img src="images/banner4.jpg" alt="" />
 											</a>
-											<p>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
-											odio eleifend. Duis commodo fringilla commodo. Aliquam erat volutpat. Vestibulum
-											facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-											tempus euismod. Vestibulum ante ipsum primis in faucibus.</p>
+											<p>Our organic cosmetics embody a harmonious fusion of nature's finest ingredients 
+												and cutting-edge science, meticulously crafted to nurture and enhance your natural 
+												beauty. Rooted in a commitment to purity and sustainability, our products are meticulously 
+												formulated using only the highest quality organic botanicals, free from harmful chemicals
+												 and additives. From the lush fields where our ingredients are sourced to the skilled
+												  hands that blend them into luxurious formulations, each step of our production process 
+												  is infused with care and integrity.
+											</p>
 										</article>
 										<div class="row gtr-150">
+											<header class="style1">
+												<h2>The most popular and featured products</h2>
+											</header>
 											<div class="col-6 col-12-small">
 												<section class="box">
 													<header>
-														<h2>Magna pulvinar tempus</h2>
+														<h2>Rose glow day cream</h2>
 													</header>
-													<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-													<p>Rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
-													eget urna nibh. Curabitur non fringilla nisl.
-													</p>
-													<a href="#" class="button style1">More</a>
+													<a href="article.jsp" class="image featured"><img src="images/Rose_glow_day_cream.jpg" alt="" /></a>
+													<p>Experience radiant hydration with our Rose Glow Day Cream. Infused with rose petals,
+														 it revitalizes, protects, and leaves skin dewy. Lightweight, yet deeply moisturizing,
+														  it absorbs quickly for all-day hydration. Transport yourself to tranquility with
+														   its enchanting aroma.</p>
+													<a href="article.jsp" class="button style1">More</a>
 												</section>
 											</div>
 											<div class="col-6 col-12-small">
 												<section class="box">
 													<header>
-														<h2>Magna pulvinar tempus</h2>
+														<h2>Magic Moringa face wash</h2>
 													</header>
-													<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-													<p>Rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
-													eget urna nibh. Curabitur non fringilla nisl.
-													</p>
-													<a href="#" class="button style1">More</a>
+													<a href="article.jsp" class="image featured"><img src="images/Magic_Moringa _face_wash.jpg" alt="" /></a>
+													<p>Elevate your routine with our Magic Moringa Face Wash. Infused with moringa,
+														 it gently cleanses and revitalizes, leaving skin refreshed and glowing. 
+														 Suitable for all skin types, it removes impurities without stripping
+														  moisture. Experience the magic of moringa for a radiant complexion.</p>
+													<a href="article.jsp" class="button style1">More</a>
 												</section>
 											</div>
 											<div class="col-6 col-12-small">
 												<section class="box">
 													<header>
-														<h2>Magna pulvinar tempus</h2>
+														<h2>Rose glow day cream</h2>
 													</header>
-													<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
-													<p>Rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
-													eget urna nibh. Curabitur non fringilla nisl.
-													</p>
-													<a href="#" class="button style1">More</a>
+													<a href="article.jsp" class="image featured"><img src="images/Rose_glow_day_cream.jpg" alt="" /></a>
+													<p>Experience radiant hydration with our Rose Glow Day Cream. Infused with rose petals,
+														 it revitalizes, protects, and leaves skin dewy. Lightweight, yet deeply moisturizing,
+														  it absorbs quickly for all-day hydration. Transport yourself to tranquility with
+														   its enchanting aroma.</p>
+													<a href="article.jsp" class="button style1">More</a>
 												</section>
 											</div>
 											<div class="col-6 col-12-small">
 												<section class="box">
 													<header>
-														<h2>Magna pulvinar tempus</h2>
+														<h2>Magic Moringa face wash</h2>
 													</header>
-													<a href="#" class="image featured"><img src="images/pic07_2.jpg" alt="" /></a>
-													<p>Rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
-													eget urna nibh. Curabitur non fringilla nisl.
-													</p>
-													<a href="#" class="button style1">More</a>
+													<a href="article.jsp" class="image featured"><img src="images/Magic_Moringa _face_wash.jpg" alt="" /></a>
+													<p>Elevate your routine with our Magic Moringa Face Wash. Infused with moringa,
+														 it gently cleanses and revitalizes, leaving skin refreshed and glowing. 
+														 Suitable for all skin types, it removes impurities without stripping
+														  moisture. Experience the magic of moringa for a radiant complexion.</p>
+													<a href="article.jsp" class="button style1">More</a>
 												</section>
 											</div>
 										</div>
