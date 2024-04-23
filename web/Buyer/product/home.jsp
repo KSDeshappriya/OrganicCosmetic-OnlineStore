@@ -619,7 +619,8 @@
 											<article class="box post-excerpt">
 												<a href="#" class="image left"><img src="images/article2.jpg" alt="" /></a>
 												<h3><a href="#">RadiantGlow Fairness Face Oil</a></h3>
-												<p>Duis odio diam, luctus et vulputate vitae, vehicula ac dolor.</p>
+												<p> a luxurious elixir crafted to enhance your natural radiance 
+													and illuminate your complexion.</p>
 											</article>
 										</li>
 										<li>
