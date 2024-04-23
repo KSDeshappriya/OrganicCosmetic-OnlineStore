@@ -429,7 +429,7 @@
 
 						<!-- Image -->
 							<a href="#" class="image featured ">
-								<img class="w3-animate-fading" src="images/banner4.jpg" alt="" />
+								<img class="w3-animate-fading" src="images/banner5.jpg" alt="" />
 							</a>
 
 						<!-- Features -->
@@ -497,38 +497,38 @@
 
 			<!-- Highlights -->
 				<section id="highlights" class="wrapper style2">
-					<div class="title">The Endorsements</div>
+					<div class="title">Categories</div>
 					<div class="container">
 						<!-------------------------------->		
 
 					<div class="row aln-center mySlides3 w3-animate-right" >		
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Aliquam diam consequat</a></h3>
-								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+								<a href="#" class="image featured"><img src="images/face.jpg" alt="" /></a>
+								<h3><a href="#">Face</a></h3>
+								<p>Explore our skincare essentials for radiant complexion.</p>
 								<ul class="actions">
-									<li><a href="#" class="button style1">Learn More</a></li>
+									<li><a href="productlist.jsp" class="button style1">Shop Now</a></li>
 								</ul>
 							</section>
 						</div>
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
-								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+								<a href="#" class="image featured"><img src="images/eyes.jpg" alt="" /></a>
+								<h3><a href="#">Eyes</a></h3>
+								<p>Enhance your gaze with our eye makeup collection.</p>
 								<ul class="actions">
-									<li><a href="#" class="button style1">Learn More</a></li>
+									<li><a href="productlist.jsp" class="button style1">Shop Now</a></li>
 								</ul>
 							</section>
 						</div>
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
-								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-								<h3><a href="#">Mattis tempus lorem</a></h3>
-								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet .</p>
+								<a href="#" class="image featured"><img src="images/lips.jpg" alt="" /></a>
+								<h3><a href="#">Lips</a></h3>
+								<p>Achieve luscious lips with our vibrant lipstick shades.</p>
 								<ul class="actions">
-									<li><a href="#" class="button style1">Learn More</a></li>
+									<li><a href="productlist.jsp" class="button style1">Shop Now</a></li>
 								</ul>
 							</section>
 							</div>
@@ -536,31 +536,31 @@
 					<div class="row aln-center mySlides3 w3-animate-right" >
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Aliquam diam consequat</a></h3>
-								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+								<a href="#" class="image featured"><img src="images/hair.jpg" alt="" /></a>
+								<h3><a href="#">Hair</a></h3>
+								<p>Elevate your hair game with our premium haircare.</p>
 								<ul class="actions">
-									<li><a href="#" class="button style1">Learn More</a></li>
+									<li><a href="#" class="button style1">Shop Now</a></li>
 								</ul>
 							</section>
 						</div>
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
-								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+								<a href="#" class="image featured"><img src="images/body.jpg" alt="" /></a>
+								<h3><a href="#">Body</a></h3>
+								<p>Pamper your skin with our luxurious body care range.</p>
 								<ul class="actions">
-									<li><a href="#" class="button style1">Learn More</a></li>
+									<li><a href="productlist.jsp" class="button style1">Shop Now</a></li>
 								</ul>
 							</section>
 						</div>
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
-								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-								<h3><a href="#">Mattis tempus lorem</a></h3>
-								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet .</p>
+								<a href="#" class="image featured"><img src="images/hands.jpg" alt="" /></a>
+								<h3><a href="#">Hands</a></h3>
+								<p>Indulge in hand care for soft, smooth hands.</p>
 								<ul class="actions">
-									<li><a href="#" class="button style1">Learn More</a></li>
+									<li><a href="productlist.jsp" class="button style1">Shop Now</a></li>
 								</ul>
 							</section>
 						</div>
@@ -568,31 +568,31 @@
 					<div class="row aln-center mySlides3 w3-animate-right" >
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Aliquam diam consequat</a></h3>
-								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+								<a href="#" class="image featured"><img src="images/feet.jpg" alt="" /></a>
+								<h3><a href="#">Feet</a></h3>
+								<p>Treat your feet to rejuvenating foot care solutions.</p>
 								<ul class="actions">
-									<li><a href="#" class="button style1">Learn More</a></li>
+									<li><a href="productlist.jsp" class="button style1">Shop Now</a></li>
 								</ul>
 							</section>
 						</div>
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
-								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+								<a href="#" class="image featured"><img src="images/mantraoil.jpg" alt="" /></a>
+								<h3><a href="#">Mantra Oils</a></h3>
+								<p>Experience holistic wellness with our potent oils.</p>
 								<ul class="actions">
-									<li><a href="#" class="button style1">Learn More</a></li>
+									<li><a href="productlist.jsp" class="button style1">Shop Now</a></li>
 								</ul>
 							</section>
 						</div>
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
-								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-								<h3><a href="#">Mattis tempus lorem</a></h3>
-								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet .</p>
+								<a href="#" class="image featured"><img src="images/bundeldeals.jpg" alt="" /></a>
+								<h3><a href="#">Bundel Deals</a></h3>
+								<p>Save big with our curated product bundles.</p>
 								<ul class="actions">
-									<li><a href="#" class="button style1">Learn More</a></li>
+									<li><a href="productlist.jsp" class="button style1">Shop Now</a></li>
 								</ul>
 							</section>
 						</div>
