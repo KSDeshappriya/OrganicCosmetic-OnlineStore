@@ -76,41 +76,41 @@
 
 								<div class="col-4 col-12-medium" style="width:25%">
 									<section class="highlight">
-										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-										<h3><a href="#">Aliquam diam consequat</a></h3>
-										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet.</p>
+										<a href="#" class="image featured"><img src="images/article1.jpg" alt="" /></a>
+										<h3><a href="#">Samaya Under Eye Cream</a></h3>
+										<p>"Hydrating eye cream for fine lines"</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">Learn More</a></li>
+											<li><a href="productlist.jsp" class="button style1">Buy Now</a></li>
 										</ul>
 									</section>
 								</div>
 								<div class="col-4 col-12-medium" style="width:25%">
 									<section class="highlight">
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-										<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+										<a href="#" class="image featured"><img src="images/article2.jpg" alt="" /></a>
+										<h3><a href="#">RadiantGlow Fairness Face Oil</a></h3>
+										<p>"Moisturizing face oil for radiant skin"</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">Learn More</a></li>
+											<li><a href="productlist.jsp" class="button style1">Buy Now</a></li>
 										</ul>
 									</section>
 								</div>
 								<div class="col-4 col-12-medium" style="width:25%">
 									<section class="highlight">
-										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-										<h3><a href="#">Mattis tempus lorem</a></h3>
-										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+										<a href="#" class="image featured"><img src="images/article3.jpg" alt="" /></a>
+										<h3><a href="#">Roots Beard Growth Serum</a></h3>
+										<p>"Balancing toner for even skin tone"</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">Learn More</a></li>
+											<li><a href="productlist.jsp" class="button style1">Buy Now</a></li>
 										</ul>
 									</section>
 								</div>
 								<div class="col-4 col-12-medium" style="width:25%">
 									<section class="highlight">
-										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-										<h3><a href="#">Mattis tempus lorem</a></h3>
-										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+										<a href="#" class="image featured"><img src="images/article4.jpg" alt="" /></a>
+										<h3><a href="#">Rose Hand Moisture Cream</a></h3>
+										<p>"Refreshing body wash with natural scents"</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">Learn More</a></li>
+											<li><a href="productlist.jsp" class="button style1">Buy Now</a></li>
 										</ul>
 									</section>
 								</div>
@@ -122,41 +122,41 @@
 
 								<div class="col-4 col-12-medium" style="width:25%">
 									<section class="highlight">
-										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-										<h3><a href="#">Mattis tempus lorem</a></h3>
-										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+										<a href="#" class="image featured"><img src="images/article5.jpg" alt="" /></a>
+										<h3><a href="#">Pink Lips Scrub + Balm Duo</a></h3>
+										<p>"Luxurious body butter for intense hydration"</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">Learn More</a></li>
+											<li><a href="productlist.jsp" class="button style1">Buy Now</a></li>
 										</ul>
 									</section>
 								</div>
 								<div class="col-4 col-12-medium" style="width:25%">
 									<section class="highlight">
-										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-										<h3><a href="#">Mattis tempus lorem</a></h3>
-										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+										<a href="#" class="image featured"><img src="images/article6.jpg" alt="" /></a>
+										<h3><a href="#">Sisiliana Ice Lotion</a></h3>
+										<p>"Whipped body butter for soft, supple skin"</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">Learn More</a></li>
+											<li><a href="productlist.jsp" class="button style1">Buy Now</a></li>
 										</ul>
 									</section>
 								</div>
 								<div class="col-4 col-12-medium" style="width:25%">
 									<section class="highlight">
-										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-										<h3><a href="#">Aliquam diam consequat</a></h3>
-										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet.</p>
+										<a href="#" class="image featured"><img src="images/Kasthuri-Facial-Hair.jpg" alt="" /></a>
+										<h3><a href="#">Kasthuri Facial Hair</a></h3>
+										<p>"Hydrating conditioner for soft hair"</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">Learn More</a></li>
+											<li><a href="productlist.jsp" class="button style1">Buy Now</a></li>
 										</ul>
 									</section>
 								</div>
 								<div class="col-4 col-12-medium" style="width:25%">
 									<section class="highlight">
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-										<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+										<a href="#" class="image featured"><img src="images/Magic_Moringa _face_wash.jpg" alt="" /></a>
+										<h3><a href="#">Magic Moringa face wash</a></h3>
+										<p>"Refreshing toner to minimize pores"</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">Learn More</a></li>
+											<li><a href="productlist.jsp" class="button style1">Buy Now</a></li>
 										</ul>
 									</section>
 								</div>
@@ -169,21 +169,21 @@
 
 								<div class="col-4 col-12-medium" style="width:25%">
 									<section class="highlight">
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-										<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+										<a href="#" class="image featured"><img src="images/Mantra-Miracle-Hair-Growth-Oil.jpg" alt="" /></a>
+										<h3><a href="#">Mantra Miracle Hair Growth Oil</a></h3>
+										<p>"Nourishing hair oil with vitamin E"</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">Learn More</a></li>
+											<li><a href="productlist.jsp" class="button style1">Buy Now</a></li>
 										</ul>
 									</section>
 								</div>
 								<div class="col-4 col-12-medium" style="width:25%">
 									<section class="highlight">
-										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-										<h3><a href="#">Mattis tempus lorem</a></h3>
-										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+										<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+										<h3><a href="#">HydraFresh Moisture Serum</a></h3>
+										<p>"Revitalizing face serum for youthful skin"</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">Learn More</a></li>
+											<li><a href="productlist.jsp" class="button style1">Buy Now</a></li>
 										</ul>
 									</section>
 								</div>
@@ -191,21 +191,21 @@
 								
 								<div class="col-4 col-12-medium" style="width:25%">
 									<section class="highlight">
-										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-										<h3><a href="#">Mattis tempus lorem</a></h3>
-										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
+										<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+										<h3><a href="#">PuraAloe face Cream</a></h3>
+										<p>"Hydrating face cream with SPF protection"</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">Learn More</a></li>
+											<li><a href="productlist.jsp" class="button style1">Buy Now</a></li>
 										</ul>
 									</section>
 								</div>
 								<div class="col-4 col-12-medium" style="width:25%">
 									<section class="highlight">
-										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-										<h3><a href="#">Aliquam diam consequat</a></h3>
-										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet.</p>
+										<a href="#" class="image featured"><img src="images/Rose_glow_day_cream.jpg" alt="" /></a>
+										<h3><a href="#">Rose glow day cream</a></h3>
+										<p>"Anti-aging face serum with collagen boosters"</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">Learn More</a></li>
+											<li><a href="productlist.jsp" class="button style1">Buy Now</a></li>
 										</ul>
 									</section>
 								</div>
