@@ -16,6 +16,17 @@
         <input type="hidden" name="amount" value="10.00">
         <input type="submit" value="Pay with PayPal">
         
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+  <input type="submit" value="Submit">
+
     </form>
     </body>
 </html>

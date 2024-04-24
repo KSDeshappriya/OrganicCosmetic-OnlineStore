@@ -92,7 +92,7 @@
 										<h3><a href="#">Mattis tempus lorem</a></h3>
 										<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">Learn More</a></li>
+											<li><a href="payments/checkoutForm.jsp" class="button style1">Learn More</a></li>
 										</ul>
 									</section>
 								</div>
@@ -527,7 +527,7 @@
 							<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
 							<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit.</p>
 							<ul class="actions">
-								<li><a href="#" class="button style1">Learn More</a></li>
+								<li><a class="button style1">Learn More</a></li>
 							</ul>
 						</section>
 					</div>
