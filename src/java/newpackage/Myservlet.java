@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -7,7 +8,14 @@ package newpackage;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,6 +25,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Avishka
  */
+@MultipartConfig
 @WebServlet(name = "Myservlet", urlPatterns = {"/Myservlet"})
 public class Myservlet extends HttpServlet {
 
@@ -72,7 +81,35 @@ public class Myservlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        PrintWriter out = response.getWriter();
+        
+        String pname = request.getParameter("productName");
+        String pdescription = request.getParameter("productDesc");
+        String pprice = request.getParameter("productPrice");
+        
+        float price = Float.parseFloat(pprice);
+        
+         String driver = "com.mysql.jdbc.Driver";
+        String url ="jdbc:mysql://localhost:3306/student";
+        String query="INSERT INTO details VALUES (pname,pdescription,pprice)";
+        
+        try {
+            Class.forName(driver);
+            Connection con = DriverManager.getConnection(url, "root", "");
+            Statement st = con.createStatement();
+            st.executeUpdate(query);
+            System.out.println("Record inserted successfully.");
+            con.close();
+        } catch (ClassNotFoundException | SQLException ex) {
+            Logger.getLogger(Myservlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        out.println(pname);
+        out.println(pdescription);
+        out.println(price);
+        
+
+//processRequest(request, response);
     }
 
     /**

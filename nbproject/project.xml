@@ -3,11 +3,7 @@
     <type>org.netbeans.modules.web.project</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/web-project/3">
-<<<<<<< HEAD
-            <name>SellerInterface</name>
-            <minimum-ant-version>1.6.5</minimum-ant-version>
-            <web-module-libraries/>
-=======
+
             <name>OrganicCosmetic-OnlineStore</name>
             <minimum-ant-version>1.6.5</minimum-ant-version>
             <web-module-libraries>
@@ -16,7 +12,7 @@
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
             </web-module-libraries>
->>>>>>> main
+
             <web-module-additional-libraries/>
             <source-roots>
                 <root id="src.dir" name="Source Packages"/>
