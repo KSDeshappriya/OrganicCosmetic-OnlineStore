@@ -17,7 +17,7 @@
     <body>
        <nav class="navbar navbar-expand-lg navbar-transparent">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.jsp">
+            <a class="navbar-brand" href="seller.jsp">
                 <img src="images/logo.png" alt="Logo" />
             </a>
  
@@ -43,7 +43,7 @@
 
     <div class="container5">
         <h1 class="mt-4 mb-4">Add New Product</h1>
-        <form action="Myservlet" method="POST" enctype="multipart/form-data">
+        <form action="ProductServlet" method="POST" enctype="multipart/form-data">
             
             <div class="form-group">
                 <label for="productName">Product Name:</label>

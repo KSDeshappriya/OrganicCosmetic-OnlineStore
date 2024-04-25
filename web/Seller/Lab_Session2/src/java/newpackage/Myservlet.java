@@ -1,21 +1,13 @@
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ProductManagement;
+package newpackage;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -25,7 +17,6 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Avishka
  */
-@MultipartConfig
 @WebServlet(name = "Myservlet", urlPatterns = {"/Myservlet"})
 public class Myservlet extends HttpServlet {
 
@@ -81,39 +72,27 @@ public class Myservlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
+        String userAgent=request.getHeader("User-Agent");
+        
+        response.setContentType("text/html");
+        
         PrintWriter out = response.getWriter();
         
-        String pname = request.getParameter("productName");
-        String pdescription = request.getParameter("productDesc");
-        String pprice = request.getParameter("productPrice");
-        float price = Float.parseFloat(pprice);
-        
-//        String driver = "com.mysql.jdbc.Driver";
-//        String url = "jdbc:mysql://localhost:3306/products";
-//        String quary = "INSERT INTO product_detail(pname,pdescription,price) VALUES(?,?,?)";
-//        
-//        Connection con = null;
-//        
-//        try {
-//            Class.forName(driver);
-//            con = DriverManager.getConnection(url,"root","");
-//            Statement st = con.createStatement();
-//            st.executeUpdate(quary);
-//            System.out.println("Record Inserted Successfuly");
-//            con.close();
-//            
-//        } catch (ClassNotFoundException |SQLException ex) {
-//            Logger.getLogger(Myservlet.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//        
+        if(userAgent != null && !userAgent.isEmpty()){
+            out.println("<html><head><title>User-Agent-Header</title></head><body></html>");
+            out.println("<h2>User Agent Header Value: </h2>");
+            out.println("<p>" +userAgent+ "</p>");
+            out.println("</body></html>");
+        }
+        else{
+            out.println("<html><head><title>User-Agent-Header</title></head><body>");
+            out.println("<h2>User Agent Header Not Present </h2>");
+            out.println("</body></html>");
+        }
         
         
-        out.println(pname);
-        out.println(pdescription);
-        out.println(price);
-        
-
-//processRequest(request, response);
+       // processRequest(request, response);
     }
 
     /**

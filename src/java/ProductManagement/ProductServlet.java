@@ -1,4 +1,3 @@
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,12 +7,6 @@ package ProductManagement;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -26,8 +19,8 @@ import javax.servlet.http.HttpServletResponse;
  * @author Avishka
  */
 @MultipartConfig
-@WebServlet(name = "Myservlet", urlPatterns = {"/Myservlet"})
-public class Myservlet extends HttpServlet {
+@WebServlet(name = "ProductServlet", urlPatterns = {"/ProductServlet"})
+public class ProductServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -46,10 +39,10 @@ public class Myservlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Myservlet</title>");            
+            out.println("<title>Servlet ProductServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Myservlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet ProductServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -81,6 +74,7 @@ public class Myservlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
         PrintWriter out = response.getWriter();
         
         String pname = request.getParameter("productName");
@@ -88,32 +82,11 @@ public class Myservlet extends HttpServlet {
         String pprice = request.getParameter("productPrice");
         float price = Float.parseFloat(pprice);
         
-//        String driver = "com.mysql.jdbc.Driver";
-//        String url = "jdbc:mysql://localhost:3306/products";
-//        String quary = "INSERT INTO product_detail(pname,pdescription,price) VALUES(?,?,?)";
-//        
-//        Connection con = null;
-//        
-//        try {
-//            Class.forName(driver);
-//            con = DriverManager.getConnection(url,"root","");
-//            Statement st = con.createStatement();
-//            st.executeUpdate(quary);
-//            System.out.println("Record Inserted Successfuly");
-//            con.close();
-//            
-//        } catch (ClassNotFoundException |SQLException ex) {
-//            Logger.getLogger(Myservlet.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//        
-        
-        
-        out.println(pname);
+         out.println(pname);
         out.println(pdescription);
         out.println(price);
         
-
-//processRequest(request, response);
+        //processRequest(request, response);
     }
 
     /**

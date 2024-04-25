@@ -19,7 +19,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-transparent">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.jsp">
+            <a class="navbar-brand" href="seller.jsp">
                 <img src="images/logo.png" alt="Logo" />
             </a>
 
