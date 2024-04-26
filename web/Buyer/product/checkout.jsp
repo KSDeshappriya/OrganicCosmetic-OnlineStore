@@ -84,19 +84,22 @@
                                                            
                                                              
                                                             
-                                                            <form action="checkout" method="post">
+                                                           <form method="post" action="CheckoutServlet"> 
                                                                  <div class="feature-list">
-                                                               <h1>Customer Details</h1>
+                                                               <h1>Customer Information</h1>
                                                                <div class="row">
-                                                                    
-                                                                    
+                                                                    customer_id
+                                                                        <label for="name">Customer_ID:</label></td>
+                                                                        <input type="text" id="customer_id" name="customer_id" required>
                                                                         <label for="name">Name:</label></td>
                                                                         <input type="text" id="name" name="name" required>
                                                                         <label for="address">Address:</label>
-                                                                        <textarea id="address" name="address" required></textarea>
-                                                                         <label for="Payment">Payment Method:</label>
+                                                                        <input type="text" id="address" name="address" required>
+                                                                         <label for="phone">Phone:</label>
+                                                                        <input type="text" id="phone" name="phone" required><br>
+                                                                         <label for="paymentMethod">Payment Method:</label>
                                                                              <div class="payment-options">
-                                                                                          <select name="Payment" id="Payment">
+                                                                                          <select name="paymentMethod" id="paymentMethod">
                                                                           <option value="lod" >Select Payment Method </option>
                                                                           <option value="cod">Cash on Delivery</option>
                                                                           <option value="opel">Credit Card</option>
@@ -124,7 +127,7 @@
 											                                                	<td style="vertical-align: middle"><p><img class="image" src=" ${product.getImage()}" style="width:20%"> </p></td>
                                                                                                 <td style="vertical-align: middle"><p> ${product.getName()} </p></td>
                                                                                                 <td style="vertical-align: middle"><p>$. ${product.getPrice()} </p></td>
-                                                                                                <td style="vertical-align: middle"><p>$. ${product.getQty()}</p></td>
+                                                                                                <td style="vertical-align: middle"><input style="height: 30px; width:5px;" class="button style2 " name="qty" type="number" max="5" min="1"></td>
 																							</tr>
                                                                                 
                                                                         </c:forEach> 
@@ -147,6 +150,8 @@
 								<ul class="actions special">
 									<li><a href="Buyer/product/productlist.jsp" class="button style1 large">GO Back</a></li>
 									<li><a href="#" class="button style2 large">Conform Order</a></li>
+                                                                        <li><input class="button style2 large" type="submit" value="Place Order"></li>
+
 								</ul>
 							</form>
                                                         </section>
