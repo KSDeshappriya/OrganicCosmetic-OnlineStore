@@ -79,7 +79,7 @@
 									<p>Feugiat dolor nullam orci pretium phasellus justo</p>
 								</header>
                                                             
-                                                            <form action="#" method="post">
+                                                           
 								<div class="feature-list">
 									<div class="row">
                                                                                                                                 <%
@@ -126,9 +126,9 @@
 								</div>
 								<ul class="actions special">
 									<li><a href="Buyer/product/productlist.jsp" class="button style1 large">GO Back</a></li>
-									<li><a href="../OrganicCosmetic-OnlineStore/CheckoutServlet?action=view" class="button style2 large">Checkout Now</a></li>
+									<li><a href="CheckoutServlet" class="button style2 large">Checkout Now</a></li>
 								</ul>
-							</form>
+							
                                                         </section>
 
 					</div>
