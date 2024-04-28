@@ -1,8 +1,8 @@
 <div align="center">
   
-  ![GitHub repo size](https://img.shields.io/github/repo-size/gthuva/teamw2s)
-  ![GitHub stars](https://img.shields.io/github/stars/gthuva/teamw2s?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/gthuva/teamw2s?style=social)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/KSDeshappriya/OrganicCosmetic-OnlineStore)
+  ![GitHub stars](https://img.shields.io/github/stars/KSDeshappriya/OrganicCosmetic-OnlineStore?style=social)
+  ![GitHub forks](https://img.shields.io/github/forks/KSDeshappriya/OrganicCosmetic-OnlineStore?style=social)
  
   <br />
   <br />
