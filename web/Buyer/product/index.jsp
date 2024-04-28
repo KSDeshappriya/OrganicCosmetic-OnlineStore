@@ -20,7 +20,7 @@
 					<!-- Logo -->
 						<div id="logo">
 							<h1><a href="index.jsp">Escape Velocity</a></h1>
-							<p>A free responsive site template by HTML5 UP</p>
+							<p>Organic done differently!</p>
 						</div>
 
 					<!-- Nav -->
@@ -277,6 +277,75 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+<!--footer section-->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="footer-column support">
+                    
+                    <div class="support-icon"></div>
+                    <h3>For all of your Organic cosmetics needs</h3>
+                </div>
+                <div class="footer-column vacation">
+                    <div class="vacation-icon"></div>
+                    <h3>Ready to get start your journey with Organic!</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-middle">
+        <div class="container">
+            <div class="row">
+                <div class="footer-column company-info">
+                    <h3>Organic Cosmetics</h3>
+                    <p>Your trusted online store for all of your cosmetic needs. <br>Organic done differently!</p>
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <!-- Icons here -->
+                    </div>
+                </div>
+                <div class="footer-column links">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Community Blog</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column newsletter">
+                    <h4>Newsletter</h4>
+                    <form action="">
+                        <input type="email" placeholder="Email address">
+                        <input type="submit" value="Subscribe">
+                        <div class="checkbox">
+                            <input type="checkbox" id="agree">
+                            <label for="agree">* I agree to all terms and policies</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-column contact">
+                    <h4>Contact</h4>
+                    <p>Drop a Line:</p>
+                    <p class="contact-detail">+94 (11) 456 889</p>
+                    <p>Email Address:</p>
+                    <p class="contact-detail">contact@organiccosmetics.lk</p>
+                    <p>Visit our concept store:</p>
+                    <p class="contact-detail">583 Chapal Street, Pitipana North, Homagama, LK</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2024 Developed and Maintained by Team Organic Cosmetics. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+		
+        
+            </footer>
 	</body>
 </html>

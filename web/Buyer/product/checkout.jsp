@@ -2,6 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page import="java.util.List, product.product, product.DBConnection" %>
 
+
 <!DOCTYPE HTML>
 <!--
 
@@ -12,11 +13,7 @@
 		<title>Checkout</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<<<<<<< Updated upstream
-		<link rel="stylesheet" href="./main.css" />
-=======
-		<link rel="stylesheet" href="main.css" />
->>>>>>> Stashed changes
+		<link rel="stylesheet" href="assets/css/main.css" />
 		
 	</head>
 	<body class="no-sidebar is-preload">
@@ -33,7 +30,7 @@
                 <!-- Logo -->
                     <div id="logo">
                         <h1><a href="">Checkout</a></h1>
-                        <p>A free responsive site template by HTML UP</p>
+                        <p>Free exchanges and returns on all orders. Island-wide delivery and warehouse pickups available. </p>
                     </div>
 
                 <!-- Nav -->
@@ -89,21 +86,16 @@
                                                            
                                                              
                                                             
-                                                            <form action="checkout" method="post">
+                                                           <form method="post" action="CheckoutServlet"> 
                                                                  <div class="feature-list">
-                                                               <h1>Customer Details</h1>
+                                                               <h1>Customer Information</h1>
                                                                <div class="row">
-                                                                    
-                                                                    
+                                                                    customer_id
+                                                                        <label for="name">Customer_ID:</label></td>
+                                                                        <input type="text" id="customer_id" name="customer_id" required>
                                                                         <label for="name">Name:</label></td>
                                                                         <input type="text" id="name" name="name" required>
                                                                         <label for="address">Address:</label>
-<<<<<<< Updated upstream
-                                                                        <textarea id="address" name="address" required></textarea>
-                                                                         <label for="Payment">Payment Method:</label>
-                                                                             <div class="payment-options">
-                                                                                          <select name="Payment" id="Payment">
-=======
                                                                         <input type="text" id="address" name="address" required>
                                                                          <label for="phone">Phone:</label>
                                                                         <input type="text" id="phone" name="phone" required><br>
@@ -118,7 +110,6 @@
                                                                                 
                                                                                 
                                                                         <select name="paymentMethod" id="paymentMethod">
->>>>>>> Stashed changes
                                                                           <option value="lod" >Select Payment Method </option>
                                                                           <option value="cod">Cash on Delivery</option>
                                                                           <option value="opel">Pay Online using a card</option>
@@ -296,7 +287,7 @@ Nugegoda 10250</p>
 											                                                	<td style="vertical-align: middle"><p><img class="image" src=" ${product.getImage()}" style="width:20%"> </p></td>
                                                                                                 <td style="vertical-align: middle"><p> ${product.getName()} </p></td>
                                                                                                 <td style="vertical-align: middle"><p>$. ${product.getPrice()} </p></td>
-                                                                                                <td style="vertical-align: middle"><p>$. ${product.getQty()}</p></td>
+                                                                                                <td style="vertical-align: middle"><input style="height: 30px; width:5px;" class="button style2 " name="qty" type="number" max="5" min="1"></td>
 																							</tr>
                                                                                 
                                                                         </c:forEach> 
@@ -319,6 +310,8 @@ Nugegoda 10250</p>
 								<ul class="actions special">
 									<li><a href="Buyer/product/productlist.jsp" class="button style1 large">GO Back</a></li>
 									<li><a href="#" class="button style2 large">Conform Order</a></li>
+                                                                        <li><input class="button style2 large" type="submit" value="Place Order"></li>
+
 								</ul>
 							</form>
                                                         </section>
@@ -393,11 +386,11 @@ Nugegoda 10250</p>
                 </div>
                 <div class="footer-column contact">
                     <h4>Contact</h4>
-                    <p>Drop a Line</p>
+                    <p>Drop a Line:</p>
                     <p class="contact-detail">+94 (11) 456 889</p>
-                    <p>Email Address</p>
+                    <p>Email Address:</p>
                     <p class="contact-detail">contact@organiccosmetics.lk</p>
-                    <p>Visit office</p>
+                    <p>Visit our concept store:</p>
                     <p class="contact-detail">583 Chapal Street, Pitipana North, Homagama, LK</p>
                 </div>
             </div>
@@ -405,7 +398,7 @@ Nugegoda 10250</p>
     </div>
     <div class="footer-bottom">
         <div class="container">
-            <p>&copy; 2024 Built with care by Team Organic Cosmetics. All Rights Reserved</p>
+            <p>&copy; 2024 Developed and Maintained by Team Organic Cosmetics. All Rights Reserved</p>
         </div>
     </div>
 </footer>
