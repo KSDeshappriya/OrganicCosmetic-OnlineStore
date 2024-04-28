@@ -173,10 +173,21 @@ input, select, textarea {
 		clear: both;
 	}
 
+<<<<<<< Updated upstream
 	p, ul, ol, dl, table, blockquote, form {
 		margin-bottom: 2em;
 	}
 
+=======
+	ul, ol, dl, table, blockquote, form {
+		margin-bottom: 2em;
+	}
+
+	p {
+		/*margin-bottom: 2em; */
+	}
+
+>>>>>>> Stashed changes
 /* Container */
 
 	.container {
@@ -3037,4 +3048,276 @@ input, select, textarea {
 		-webkit-transform: rotate(45deg);
 		-ms-transform: rotate(45deg);
 		transform: rotate(45deg);
+<<<<<<< Updated upstream
 	  }
+=======
+	  }
+
+/* dropdown list */
+/*.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}*/
+
+/*dropdown v1*/
+
+.organic-store-checkout-payment {
+    padding: 15px;
+    border: 1px solid #e3e3e3
+}
+
+/*------------------------------------------------------------------*\	
+				4 - LAYOUT STYLE																										
+\*------------------------------------------------------------------*/
+body {
+	min-height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+  }
+  
+  body .wrapper-page {
+	width: 100%;
+	background: #fff;
+	z-index: 11;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+  }
+  
+  body.boxed-layout, body.boxed {
+	background: #efefef;
+	max-width: 1440px;
+	-webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+	margin: 0 auto;
+  }
+  
+  body.boxed-layout .wrapper-page, body.boxed .wrapper-page {
+	background: #fff;
+  }
+  
+  body.open-off-canvas:after {
+	content: "";
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5000px;
+	z-index: 99;
+  }
+  
+  body .page {
+	position: relative;
+  }
+  
+  body .container-layout-content.container {
+	margin-bottom: 30px;
+  }
+  
+  .main-page-content {
+	position: relative;
+  }
+  
+  #wp-content {
+	min-height: 150px;
+	background: #fff;
+  }
+  
+  #wp-footer {
+	position: relative;
+	z-index: 9;
+  }
+  
+  footer .footer-main {
+	background: var(--gowilds-footer-bg-color);
+	color: var(--gowilds-footer-color);
+	position: relative;
+	z-index: 111;
+  }
+  
+  footer .footer-main a {
+	color: var(--gowilds-footer-color);
+  }
+  
+  footer .footer-main a:hover, footer .footer-main a:focus {
+	color: #fff;
+  }
+  
+  footer .footer-main .footer-main > p {
+	display: none;
+  }
+  
+  footer .footer-main .column > .widget:first-child {
+	padding-top: 45px;
+  }
+  
+  .copyright {
+	color: var(--gowilds-footer-color);
+	background: #1C231F;
+  }
+  
+  .copyright .copyright-content {
+	text-align: center;
+	padding: 35px 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  @media (max-width: 1025px) {
+	.container {
+	  max-width: 100%;
+	}
+  }
+  
+
+  .footer {
+    background-color: #202b1f; 
+    color: #fff; 
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-top {
+    padding: 20px 0;
+}
+
+.footer-middle {
+    padding: 20px 0;
+    border-top: 1px solid #444; /* Border color as needed */
+    border-bottom: 1px solid #444; /* Border color as needed */
+}
+
+.footer-bottom {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-column h3, .footer-column h4 {
+    color: #f4fcb2ee; /* Adjust title colors */
+}
+
+.footer-column p, .footer-column li, .footer-column .contact-detail {
+    color: #ccc; /* Adjust text colors */
+}
+
+.contact-detail {
+	margin-bottom: 2em;
+	margin-top: 0.4em;
+}
+
+.footer-column li {
+    list-style: none;
+}
+
+.footer-column a {
+    color: #aad576; /* Adjust link colors */
+    text-decoration: none;
+}
+
+.support-icon, .vacation-icon {
+    /* Insert background-image */
+    height: 50px; /* Adjust size */
+    width: 50px; /* Adjust size */
+}
+
+.social-icons {
+    /* Style your social icons here */
+}
+
+.newsletter input[type="email"] {
+    padding: 5px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.newsletter input[type="submit"] {
+    padding: 5px 20px;
+    background-color: #aad576; /* Button background color */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.newsletter .checkbox {
+    margin
+}
+
+
+.footer .social-list { gap: 12px; }
+
+.footer .social-link {
+  background-color: var(--onyx);
+  padding: 14px;
+  border-radius: 50%;
+  transition: var(--transition-1);
+}
+
+.footer .social-link:is(:hover, :focus) {
+  background-color: var(--majorelle-blue);
+  color: var(--white);
+}
+
+.footer-link {
+  font-size: var(--fs-8);
+  margin-block-start: 15px;
+  transition: var(--transition-1);
+}
+
+.footer-link:is(:hover, :focus) { color: var(--mustard); }
+>>>>>>> Stashed changes
