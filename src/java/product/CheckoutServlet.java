@@ -17,14 +17,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import product.Product;
+import product.product;
 import product.DBConnection;
+import product.CartServlet;
 
 public class CheckoutServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        List<Product> cartProducts = getCartProducts(session);
+        List<product> cartProducts = getCartProducts(session);
         request.setAttribute("cartProducts", cartProducts);
         request.getRequestDispatcher("Buyer/product/checkout.jsp").forward(request, response);
     }
@@ -38,7 +39,7 @@ public class CheckoutServlet extends HttpServlet {
         String paymentMethod = request.getParameter("paymentMethod");
 
         HttpSession session = request.getSession();
-        List<Product> cartProducts = getCartProducts(session);
+        List<product> cartProducts = getCartProducts(session);
 
         DBConnection dbConnection = new DBConnection();
         dbConnection.insertOrderIntoDatabase(customer_id, name, address, phone, paymentMethod, cartProducts);
@@ -47,14 +48,14 @@ public class CheckoutServlet extends HttpServlet {
         response.sendRedirect("Buyer/product/orderSuccess.jsp");
     }
 
-    private List<Product> getCartProducts(HttpSession session) {
+    private List<product> getCartProducts(HttpSession session) {
         List<Integer> cart = (List<Integer>) session.getAttribute("cart");
-        List<Product> products = new ArrayList<>();
+        List<product> products = new ArrayList<>();
         if (cart != null) {
             DBConnection dbConnection = new DBConnection();
             for (int productId : cart) {
                 System.out.println("Fetching product with ID: " + productId);
-                Product product = dbConnection.getProductById(productId);
+                product product = dbConnection.getProductById(productId);
                 if (product != null) {
                     products.add(product);
                 }

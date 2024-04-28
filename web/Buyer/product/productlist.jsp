@@ -1,10 +1,7 @@
-<%--<%@page import="java.lang.System.*"%>--%>
+<%@page import="java.lang.System.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%--<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>--%>
-<%@ page import="java.util.List, product.Product, product.DBConnection, java.util.Base64" %>
-<%@ page import="package.product.Product" %>
-<%@ page import="package.product.DBConnection" %>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page import="java.util.List, product.product, product.DBConnection, java.util.Base64" %>
 
 <!DOCTYPE HTML>
 <!--
@@ -239,7 +236,7 @@
 
                             <%
                                DBConnection dbConnection = new DBConnection();
-                               List<Product> products = dbConnection.getProducts();
+                               List<product> products = dbConnection.getProducts();
                                request.setAttribute("products", products);
                            %>
 

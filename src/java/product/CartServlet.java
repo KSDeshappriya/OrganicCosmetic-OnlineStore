@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import product.Product;
+import product.product;
 import product.DBConnection;
 
 public class CartServlet extends HttpServlet {
@@ -36,7 +36,7 @@ public class CartServlet extends HttpServlet {
             List<Integer> cart = (List<Integer>) session.getAttribute("cart");
             System.out.println("Cart contents: " + cart);
 
-            List<Product> cartProducts = getCartProducts(session);
+            List<product> cartProducts = getCartProducts(session);
             request.setAttribute("products", cartProducts);
             RequestDispatcher dispatcher = request.getRequestDispatcher("Buyer/product/cart.jsp");
             dispatcher.forward(request, response);
@@ -52,14 +52,14 @@ public class CartServlet extends HttpServlet {
         cart.add(productId);
     }
 
-    private List<Product> getCartProducts(HttpSession session) {
+    private List<product> getCartProducts(HttpSession session) {
         List<Integer> cart = (List<Integer>) session.getAttribute("cart");
-        List<Product> products = new ArrayList<>();
+        List<product> products = new ArrayList<>();
         if (cart != null) {
             DBConnection dbConnection = new DBConnection();
             for (int productId : cart) {
                 System.out.println("Fetching product with ID: " + productId);
-                Product product = dbConnection.getProductById(productId);
+                product product = dbConnection.getProductById(productId);
                 if (product != null) {
                     products.add(product);
                 }
