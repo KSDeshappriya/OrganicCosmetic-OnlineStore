@@ -2,7 +2,6 @@ package registration;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -20,9 +19,9 @@ public class Login extends HttpServlet {
         String uemail = request.getParameter("username");
         String upwd = request.getParameter("password");
         
+        Connection con = null;
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/youtube?useSSL=false", "root", "");
+            con = DatabaseConnection.getConnection();
             PreparedStatement pst = con.prepareStatement("SELECT * FROM users WHERE uemail = ? AND upwd = ?");
             pst.setString(1, uemail);
             pst.setString(2, upwd);
@@ -35,8 +34,10 @@ public class Login extends HttpServlet {
             } else {
                 response.sendRedirect(request.getContextPath() + "/Admin/auth/login.jsp?status=failed");
             }
-        } catch (SQLException | ClassNotFoundException ex) {
-            ex.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            DatabaseConnection.closeConnection(con);
         }
     }
 }

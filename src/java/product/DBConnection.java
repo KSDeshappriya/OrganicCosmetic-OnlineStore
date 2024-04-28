@@ -1,5 +1,6 @@
 package product;
 
+import static java.lang.System.out;
 import java.sql.*;
 import java.sql.Blob;
 import java.sql.Connection;
@@ -141,7 +142,9 @@ public class DBConnection {
  
   public void insertOrderIntoDatabase(String customer_id,String name, String address, String phone, String paymentMethod, List<product> cartProducts) {
         try {
+            
             Class.forName("com.mysql.jdbc.Driver");
+            
             Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
 
             // Insert order details into the orders table
@@ -153,7 +156,7 @@ public class DBConnection {
             orderStatement.setString(4, phone);
             orderStatement.setString(5, paymentMethod);
             orderStatement.executeUpdate();
-
+            out.println("insert suceess");
             // Get the generated order ID
             ResultSet generatedKeys = orderStatement.getGeneratedKeys();
             int orderId = -1;
@@ -170,6 +173,7 @@ public class DBConnection {
                 orderItemStatement.setInt(3, 1); // Set the quantity to 1 for now
                 orderItemStatement.setDouble(4, product.getPrice());
                 orderItemStatement.executeUpdate();
+                out.println("insert suceess");
             }
 
             connection.close();

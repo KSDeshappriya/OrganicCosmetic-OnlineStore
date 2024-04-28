@@ -19,6 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import product.product;
 import product.DBConnection;
+import product.CartServlet;
 
 public class CheckoutServlet extends HttpServlet {
     @Override

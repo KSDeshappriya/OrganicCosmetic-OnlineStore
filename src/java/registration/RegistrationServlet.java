@@ -2,7 +2,6 @@ package registration;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import javax.servlet.ServletException;
@@ -23,8 +22,7 @@ public class RegistrationServlet extends HttpServlet {
         
         Connection con = null;
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/youtube?useSSL=false", "root", "");
+            con = DatabaseConnection.getConnection();
             PreparedStatement pst = con.prepareStatement("INSERT INTO users(uname, upwd, uemail, umobile, role) VALUES(?,?,?,?, ?)");
             pst.setString(1, uname);
             pst.setString(2, upwd);
@@ -37,16 +35,10 @@ public class RegistrationServlet extends HttpServlet {
             
             // Redirect with status to suitable page
             response.sendRedirect(request.getContextPath() + "/Admin/auth/registration.jsp?status=" + status);
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (con != null) {
-                    con.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            DatabaseConnection.closeConnection(con);
         }
     }
 }
