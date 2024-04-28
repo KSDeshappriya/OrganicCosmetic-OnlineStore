@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app id="WebApp_9" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee    http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <display-name>SignUp</display-name>
-// kavindu   
+<!--// kavindu-->   
 
     <servlet>
         <servlet-name>RegistrationServlet</servlet-name>
@@ -39,7 +39,7 @@
         <location>/error404.html</location>
     </error-page>
     
-    //shad
+    <!--//shad-->
     
     <servlet>
         <servlet-name>cartServlet</servlet-name>
@@ -77,6 +77,8 @@
         <servlet-name>CheckoutServlet</servlet-name>
         <url-pattern>/CheckoutServlet</url-pattern>
     </servlet-mapping>
+    
+    
     <session-config>
         <session-timeout>
             30
