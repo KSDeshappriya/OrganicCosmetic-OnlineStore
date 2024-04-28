@@ -43,11 +43,22 @@
 
     <div class="container5">
         <h1 class="mt-4 mb-4">Add New Product</h1>
-        <form action="ProductServlet" method="POST" enctype="multipart/form-data">
-            
+        <form action="../ProductServlet" method="POST" enctype="multipart/form-data">
+<!--            <div class="form-group">
+                <label for="productId">Product ID:</label>
+                <input type="number" class="form-control" id="productId" name="productId" required>
+            </div>-->
             <div class="form-group">
                 <label for="productName">Product Name:</label>
                 <input type="text" class="form-control" id="productName" name="productName" required>
+            </div>
+            <div class="form-group">
+                <label for="productType">Product Type:</label>
+                <input type="text" class="form-control" id="productType" name="productType" required>
+            </div>
+            <div class="form-group">
+                <label for="pcategory">Category:</label>
+                <input type="text" class="form-control" id="pcategory" name="pcategory" required>
             </div>
             <div class="form-group">
                 <label for="productDesc">Description:</label>
