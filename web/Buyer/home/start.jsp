@@ -359,7 +359,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				function redirect() {
 					setTimeout(function() {
 						window.location.href = '../product/home.jsp'; // Replace with your destination URL
-					}, 3000); // 3000 milliseconds = 3 seconds
+					}, 4000); // 4000 milliseconds = 4 seconds
 				}
 		
 				// Call the redirect function when the page loads

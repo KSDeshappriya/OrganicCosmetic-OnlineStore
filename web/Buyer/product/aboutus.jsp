@@ -151,7 +151,7 @@
 											</header>
 											<p>Have questions? Reach out to us today for assistance.
 												 Our team is here to help you with any inquiries or concerns you may have. Contact us now!</p>
-											<a href="contactus.jsp" class="button style1">Contact Now</a>
+											<a href="contactus.jsp" class="button style1">Learn More</a>
 										</section>
 										<section class="box">
 											<header>
