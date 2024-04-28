@@ -19,7 +19,7 @@ Organic Cosmetics is a concept wed development project by a group of 10 students
 
 ### Demo Screeshots
 
-![teamw2s Desktop Demo](./readme-images/desktop.png "Desktop Demo")
+![Organic Cosmetics Desktop Demo](Homepage "Desktop Demo")
 
 ### Prerequisites
 
