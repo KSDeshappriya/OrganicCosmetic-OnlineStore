@@ -1,6 +1,6 @@
-<%@page import="java.lang.System.*"%>
+<%--<%@page import="java.lang.System.*"%>--%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%--<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>--%>
 <%@ page import="java.util.List, product.product, product.DBConnection, java.util.Base64" %>
 
 <!DOCTYPE HTML>
@@ -26,7 +26,7 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<h1><a href="">Escape Velocity</a></h1>
+							<h1><a href="">The Products</a></h1>
 							<p>A free responsive site template by HTML5 UP</p>
 						</div>
 
@@ -75,6 +75,150 @@
 					<div class="title">The Products</div>
 					<div class="container">
 						<div class="row aln-center">
+<h2>Discover the Latest Categories</h2>
+							<div class="container">
+								<!-------------------------------->	
+								
+	
+		
+							<div class="row aln-center mySlides3 w3-animate-right" >		
+								<div class="col-4 col-12-medium">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/face.jpg" alt="" /></a>
+										<h3><a href="#">Face</a></h3>
+										<p>Explore our skincare essentials for radiant complexion.</p>
+										<ul class="actions">
+											<li><a href="productlist.jsp" class="button style2">See More ></a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-4 col-12-medium">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/eyes.jpg" alt="" /></a>
+										<h3><a href="#">Eyes</a></h3>
+										<p>Enhance your gaze with our eye makeup collection.</p>
+										<ul class="actions">
+											<li><a href="productlist.jsp" class="button style2">See More ></a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-4 col-12-medium">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/lips.jpg" alt="" /></a>
+										<h3><a href="#">Lips</a></h3>
+										<p>Achieve luscious lips with our vibrant lipstick shades.</p>
+										<ul class="actions">
+											<li><a href="productlist.jsp" class="button style2">See More ></a></li>
+										</ul>
+									</section>
+									</div>
+								</div>
+							<div class="row aln-center mySlides3 w3-animate-right" >
+								<div class="col-4 col-12-medium">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/hair.jpg" alt="" /></a>
+										<h3><a href="#">Hair</a></h3>
+										<p>Elevate your hair game with our premium haircare.</p>
+										<ul class="actions">
+											<li><a href="productlist.jsp" class="button style2">See More ></a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-4 col-12-medium">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/body.jpg" alt="" /></a>
+										<h3><a href="#">Body</a></h3>
+										<p>Pamper your skin with our luxurious body care range.</p>
+										<ul class="actions">
+											<li><a href="productlist.jsp" class="button style2">See More ></a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-4 col-12-medium">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/hands.jpg" alt="" /></a>
+										<h3><a href="#">Hands</a></h3>
+										<p>Indulge in hand care for soft, smooth hands.</p>
+										<ul class="actions">
+											<li><a href="productlist.jsp" class="button style2">See More ></a></li>
+										</ul>
+									</section>
+								</div>
+							</div>
+							<div class="row aln-center mySlides3 w3-animate-right" >
+								<div class="col-4 col-12-medium">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/feet.jpg" alt="" /></a>
+										<h3><a href="#">Feet</a></h3>
+										<p>Treat your feet to rejuvenating foot care solutions.</p>
+										<ul class="actions">
+											<li><a href="productlist.jsp" class="button style2">See More ></a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-4 col-12-medium">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/mantraoil.jpg" alt="" /></a>
+										<h3><a href="#">Mantra Oils</a></h3>
+										<p>Experience holistic wellness with our potent oils.</p>
+										<ul class="actions">
+											<li><a href="productlist.jsp" class="button style2">See More ></a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-4 col-12-medium">
+									<section class="highlight">
+										<a href="#" class="image featured"><img src="images/bundeldeals.jpg" alt="" /></a>
+										<h3><a href="#">Bundel Deals</a></h3>
+										<p>Save big with our curated product bundles.</p>
+										<ul class="actions">
+											<li><a href="productlist.jsp" class="button style2">See More ></a></li>
+										</ul>
+									</section>
+								</div>
+							</div>	
+				
+				<button class="w3-button w3-white w3-display-left" onclick="plusDivs3(-1)">&#10100;</button>
+				  <button class="w3-button w3-white w3-display-right" onclick="plusDivs3(1)">&#10101;</button>
+		<!----------------------------------------------->
+		<script>
+		var slideIndex3 = 1;
+		showDivs3(slideIndex3);
+		
+		function plusDivs3(n3) {
+		  showDivs3(slideIndex3 += n3);
+		}
+		
+		function showDivs3(n3) {
+		  var i3;
+		  var x3 = document.getElementsByClassName("mySlides3");
+		  if (n3 > x3.length) {slideIndex3 = 1}
+		  if (n3 < 1) {slideIndex2 = x3.length}
+		  for (i3 = 0; i3 < x3.length; i3++) {
+			x3[i3].style.display = "none";  
+		  }
+		  x3[slideIndex3-1].style.display = "";  
+		}
+		
+		var myIndex3 = 0;
+		carousel3();
+		
+		function carousel3() {
+		var i3;
+		var x3 = document.getElementsByClassName("mySlides3");
+		for (i3 = 0; i3 < x3.length; i3++) {
+			x3[i3].style.display = "none";  
+		}
+		myIndex3++;
+		if (myIndex3 > x3.length) {myIndex3 = 1}    
+		x3[myIndex3-1].style.display = "";  
+		setTimeout(carousel3, 3000);    
+		}
+		</script>
+		<!------------------------------------------------>
+		
+					
+							</div>
 							<!--<div class="col-4 col-12-medium">
 								<section class="highlight">
 									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
@@ -88,6 +232,7 @@
                                                     
  <!--  ------------------------------------------------------------------------------   -->
                                                
+ <h2>Discover the Latest Additions to Our Collection - Shop Now!</h2>
 
                             <%
                                DBConnection dbConnection = new DBConnection();
@@ -114,7 +259,7 @@
                                                                 <br>"${product.getDescription()}"</p>
                                                                 <h3>$. ${product.getPrice()}</h3>
                                                                <ul class="actions">
-										<li><a href="../../CartServlet?action=add&id=${product.getId()}" class="button style2">+ Add to cart</a></li>
+										<li><a href="../../CartServlet?action=add&id=${product.getId()}" class="button style1">+ Add to cart</a></li>
 									</ul>
                                                                         
                                                                         <c:choose>
