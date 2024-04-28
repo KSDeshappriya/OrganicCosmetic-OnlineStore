@@ -11,7 +11,7 @@ package product;
  */
 
 
-public class product {
+public class Product {
     private int id;
     private String name;
     private String category;
@@ -20,7 +20,7 @@ public class product {
     private String description;
     private double price;
 
-    public product( int id, byte[] imagedata, String name, String category, String image , String description, double price) {
+    public Product( int id, byte[] imagedata, String name, String category, String image , String description, double price) {
         
         this.id = id;
         this.imagedata= imagedata;
