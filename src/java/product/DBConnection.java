@@ -1,11 +1,14 @@
 package product;
 
+import static java.lang.System.out;
+import java.sql.*;
 import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import product.product;
@@ -136,4 +139,48 @@ public class DBConnection {
 
         return imageData;
     }
+ 
+  public void insertOrderIntoDatabase(String customer_id,String name, String address, String phone, String paymentMethod, List<product> cartProducts) {
+        try {
+            
+            Class.forName("com.mysql.jdbc.Driver");
+            
+            Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+
+            // Insert order details into the orders table
+            String orderQuery = "INSERT INTO orders (customer_id ,name, address, phone, payment_method) VALUES (?, ?, ?, ?, ?)";
+            PreparedStatement orderStatement = connection.prepareStatement(orderQuery, Statement.RETURN_GENERATED_KEYS);
+            orderStatement.setString(1, customer_id);
+            orderStatement.setString(2, name);
+            orderStatement.setString(3, address);
+            orderStatement.setString(4, phone);
+            orderStatement.setString(5, paymentMethod);
+            orderStatement.executeUpdate();
+            out.println("insert suceess");
+            // Get the generated order ID
+            ResultSet generatedKeys = orderStatement.getGeneratedKeys();
+            int orderId = -1;
+            if (generatedKeys.next()) {
+                orderId = generatedKeys.getInt(1);
+            }
+
+            // Insert order items into the order_items table
+            String orderItemQuery = "INSERT INTO order_items (order_id, product_id, quantity, price) VALUES (?, ?, ?, ?)";
+            PreparedStatement orderItemStatement = connection.prepareStatement(orderItemQuery);
+            for (product product : cartProducts) {
+                orderItemStatement.setInt(1, orderId);
+                orderItemStatement.setInt(2, product.getId());
+                orderItemStatement.setInt(3, 1); // Set the quantity to 1 for now
+                orderItemStatement.setDouble(4, product.getPrice());
+                orderItemStatement.executeUpdate();
+                out.println("insert suceess");
+            }
+
+            connection.close();
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+ 
 }
