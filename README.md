@@ -19,7 +19,7 @@ Organic Cosmetics is a concept wed development project by a group of 10 students
 
 ### Demo Screeshots
 
-![Organic Cosmetics Desktop Demo](Homepage "Desktop Demo")
+![Organic Cosmetics Desktop Demo](docs/img/Homepage.png "Desktop Demo")
 
 ### Prerequisites
 
@@ -53,11 +53,19 @@ git clone https://github.com/KSDeshappriya/OrganicCosmetic-OnlineStore.git
 
 
 ### Team
-1. 
+<!-- CONTRIBUTORS_START -->
+- <img src="https://avatars.githubusercontent.com/u/119614718?v=4" width="50" height="50" alt="KSDeshappriya"> [KSDeshappriya](https://github.com/KSDeshappriya)
+- <img src="https://avatars.githubusercontent.com/u/130966989?v=4" width="50" height="50" alt="SimShad"> [SimShad](https://github.com/SimShad)
+- <img src="https://avatars.githubusercontent.com/u/101052107?v=4" width="50" height="50" alt="gthuva"> [gthuva](https://github.com/gthuva)
+- <img src="https://avatars.githubusercontent.com/u/135829912?v=4" width="50" height="50" alt="Iznaism"> [Iznaism](https://github.com/Iznaism)
+- <img src="https://avatars.githubusercontent.com/u/121929801?v=4" width="50" height="50" alt="WMAPraveen"> [WMAPraveen](https://github.com/WMAPraveen)
 
-### Contact
+<!-- CONTRIBUTORS_END -->
 
-We are busy with your competitors, but still we have some time to connect, buzz me on [Twitter](https://www.twitter.com/gthuvaDEV) / [LinkedIn](https://www.linkedin.com/in/0xgthuva/) / [Instagram](https://www.instagram.com/0xgthuva.jpg/).
+
+<!-- ### Contact
+
+We are busy with your competitors, but still we have some time to connect, buzz me on [Twitter](https://www.twitter.com/gthuvaDEV) / [LinkedIn](https://www.linkedin.com/in/0xgthuva/) / [Instagram](https://www.instagram.com/0xgthuva.jpg/). -->
 
 ### License
 * GNU GPL v3.0 (https://www.gnu.org/licenses/gpl-3.0.en.html)
@@ -66,9 +74,9 @@ Good artists copy, Great artists don't steal, they get inspire from others work.
 
 ### More Screeshots
 
-![Organic Cosmetics Products page Demo](Products_page.png "Desktop Demo")
-![Organic Cosmetics Analytics for the sales Demo](Sales_Analytics.png "Desktop Demo")
-![Organic Cosmetics Seller Dashboard page Demo](Seller_Dashboard.png "Desktop Demo")
-![Organic Cosmetics Products page Demo](Products_page.png "Desktop Demo")
-![Organic Cosmetics Order Management page Demo](Order_Management.png "Desktop Demo")
-![Organic Cosmetics Product Management page Demo](Product_Management.png "Desktop Demo")
+![Organic Cosmetics Products page Demo](docs/img/Products_page.png "Desktop Demo")
+![Organic Cosmetics Analytics for the sales Demo](docs/img/Sales_Analytics.png "Desktop Demo")
+![Organic Cosmetics Seller Dashboard page Demo](docs/img/Seller_Dashboard.png "Desktop Demo")
+![Organic Cosmetics Products page Demo](docs/img/Products_page.png "Desktop Demo")
+![Organic Cosmetics Order Management page Demo](docs/img/Order_Management.png "Desktop Demo")
+![Organic Cosmetics Product Management page Demo](docs/img/Product_Management.png "Desktop Demo")
