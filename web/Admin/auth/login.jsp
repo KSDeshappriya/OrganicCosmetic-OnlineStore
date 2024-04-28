@@ -89,6 +89,8 @@
                 const status = params.get('status');
                 if (status == "failed") {
                     swal("Sorry", "Wrong username or password", "error");
+                } else if(status == "success") {
+                    swal("Congrats", "Account Created Successfully; Then, You could login!", "success");
                 }
 
                 // Set the value of the hidden input field to the referrer value

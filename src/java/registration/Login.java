@@ -20,29 +20,31 @@ public class Login extends HttpServlet {
         String upwd = request.getParameter("password");
         // Retrieve the referrer value from the request parameters
         String referrer = request.getParameter("referrer");
-        
+
         Connection con = null;
         try {
             con = DatabaseConnection.getConnection();
             PreparedStatement pst = con.prepareStatement("SELECT * FROM users WHERE uemail = ? AND upwd = ?");
             pst.setString(1, uemail);
             pst.setString(2, upwd);
-            
+
             ResultSet rs = pst.executeQuery();
             if (rs.next()) {
                 HttpSession session = request.getSession();
                 session.setAttribute("name", rs.getString("uname"));
-                
-                if (referrer != null) {
+
+                // Check if referrer is null or not equal to "registration.jsp"
+                if (referrer == null || !referrer.contains("registration.jsp")) {
                     // Redirect to the original request URI
                     response.sendRedirect(referrer);
                 } else {
-                    // If no original request URI is found, redirect to a default page
+                    // If the referrer is "registration.jsp", redirect to a default page
                     response.sendRedirect(request.getContextPath() + "/index.jsp");
                 }
             } else {
                 response.sendRedirect(request.getContextPath() + "/Admin/auth/login.jsp?status=failed");
             }
+
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {

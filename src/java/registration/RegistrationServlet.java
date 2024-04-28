@@ -34,7 +34,7 @@ public class RegistrationServlet extends HttpServlet {
             String status = (rowCount > 0) ? "success" : "failed";
             
             // Redirect with status to suitable page
-            response.sendRedirect(request.getContextPath() + "/Admin/auth/registration.jsp?status=" + status);
+            response.sendRedirect(request.getContextPath() + "/Admin/auth/login.jsp?status=" + status);
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -42,3 +42,4 @@ public class RegistrationServlet extends HttpServlet {
         }
     }
 }
+
