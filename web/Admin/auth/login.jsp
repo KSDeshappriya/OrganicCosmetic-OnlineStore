@@ -32,13 +32,15 @@
 
                         <div class="signin-form">
                             <h2 class="form-title">Sign in</h2>
-                            <form method="post" action="../../Login" class="register-form"
+                            <form method="post" action="${pageContext.request.contextPath}/Login" class="register-form"
                                   id="login-form">
+                                <!-- Add a hidden input field to store the referrer value -->
+                                <input type="hidden" name="referrer" id="referrer" value="" />
                                 <div class="form-group">
                                     <label for="username"><i
                                             class="zmdi zmdi-account material-icons-name"></i></label> <input
-                                        type="text" name="username" id="username"
-                                        placeholder="Your Name" />
+                                        type="text" name="uemail" id="uemail"
+                                        placeholder="Your Email" />
                                 </div>
                                 <div class="form-group">
                                     <label for="password"><i class="zmdi zmdi-lock"></i></label> <input
@@ -82,13 +84,17 @@
         <link rel="stylesheet" href="alert/dist/sweetalert.css">
 
         <script>
-            document.addEventListener('DOMContentLoaded', function () {
+         document.addEventListener('DOMContentLoaded', function () {
                 const params = new URLSearchParams(window.location.search);
                 const status = params.get('status');
                 if (status == "failed") {
-                    swal("Sorry", "Wrong username or password", "error")
+                    swal("Sorry", "Wrong username or password", "error");
                 }
+
+                // Set the value of the hidden input field to the referrer value
+                document.getElementById('referrer').value = document.referrer;
             });
+
         </script>
     </body>
     <!-- This templates was made by Colorlib (https://colorlib.com) -->

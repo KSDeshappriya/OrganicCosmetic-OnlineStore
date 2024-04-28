@@ -16,8 +16,10 @@ public class Login extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String uemail = request.getParameter("username");
+        String uemail = request.getParameter("uemail");
         String upwd = request.getParameter("password");
+        // Retrieve the referrer value from the request parameters
+        String referrer = request.getParameter("referrer");
         
         Connection con = null;
         try {
@@ -30,7 +32,14 @@ public class Login extends HttpServlet {
             if (rs.next()) {
                 HttpSession session = request.getSession();
                 session.setAttribute("name", rs.getString("uname"));
-                response.sendRedirect(request.getContextPath() + "/index.jsp");
+                
+                if (referrer != null) {
+                    // Redirect to the original request URI
+                    response.sendRedirect(referrer);
+                } else {
+                    // If no original request URI is found, redirect to a default page
+                    response.sendRedirect(request.getContextPath() + "/index.jsp");
+                }
             } else {
                 response.sendRedirect(request.getContextPath() + "/Admin/auth/login.jsp?status=failed");
             }
