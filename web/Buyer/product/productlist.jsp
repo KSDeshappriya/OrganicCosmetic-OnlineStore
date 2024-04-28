@@ -1,6 +1,6 @@
-<%@page import="java.lang.System.*"%>
+<%--<%@page import="java.lang.System.*"%>--%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%--<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>--%>
 <%@ page import="java.util.List, product.product, product.DBConnection, java.util.Base64" %>
 
 <!DOCTYPE HTML>
