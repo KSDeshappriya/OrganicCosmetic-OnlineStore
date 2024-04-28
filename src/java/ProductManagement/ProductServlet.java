@@ -87,7 +87,7 @@ public class ProductServlet extends HttpServlet {
             throws ServletException, IOException {
         
         PrintWriter out = response.getWriter();
-       
+        out.println("Servlet is working");
 
         String product_name = request.getParameter("productName");
         String product_type = request.getParameter("productType");
@@ -97,8 +97,9 @@ public class ProductServlet extends HttpServlet {
         Float price = Float.parseFloat(pprice);
         Part file = request.getPart("productImage");
         String imageFileName = file.getSubmittedFileName();
+        out.println("Selected Image File Name: " + imageFileName);
         String uploadPath = "D://NSBM - git/Online_Store/OrganicCosmetic-OnlineStore/web/Seller/images/" + imageFileName;
-        
+        out.println("Uploaded Path is: " + uploadPath);
         //................................................................................................
         
         //..................Upload Photo............................
