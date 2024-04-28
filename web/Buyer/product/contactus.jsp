@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	</head>
 	<body class="left-sidebar is-preload">
 		<div id="page-wrapper">
@@ -19,7 +20,7 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<h1><a href="">About Us</a></h1>
+							<h1><a href="">Conatact Us</a></h1>
 							<p>A free responsive site template by HTML5 UP</p>
 						</div>
 
@@ -51,8 +52,11 @@
 							</li>
 		<!-- 				<li><a href="left-sidebar.html">Left Sidebar</a></li>		-->
 						<li class="current"><a href="contactus.jsp">Contact Us</a></li>		
-						<li><a href="aboutus.jsp">About Us</a></li>					
-						<li><a href="../../CartServlet?action=view">Cart</a></li>
+						<li><a href="aboutus.jsp">About Us</a></li>	
+						<li><a href="article.jsp">Article</a></li>				
+						<li><a href="" style="display: none;">Empty Space</a></li>			
+						<li><a href="../../CartServlet?action=view"><img src="images/cart2.png">Cart</a></li>
+						<li><a href="../../Admin/auth/login.jsp"><img src="images/user2.png">Login</a></li>
 		<!-- 				<li><a href="no-sidebar.html">No Sidebar</a></li>			-->
 						</ul>
 					</nav>
