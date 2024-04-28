@@ -1,5 +1,6 @@
 package product;
 
+import static java.lang.System.out;
 import java.sql.*;
 import java.sql.Blob;
 import java.sql.Connection;
@@ -10,7 +11,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import product.Product;
+import product.product;
 
 public class DBConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/organic_cosmetics";
@@ -21,8 +22,8 @@ public class DBConnection {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public List<Product> getProducts() {
-        List<Product> products = new ArrayList<>();
+    public List<product> getProducts() {
+        List<product> products = new ArrayList<>();
 
         try {
             // Load the JDBC driver
@@ -48,7 +49,7 @@ public class DBConnection {
                  
                 String description = resultSet.getString("product_description");
                 double price = resultSet.getDouble("Price");
-                Product product = new Product( id, imagedata, name, category, image, description, price);
+                product product = new product( id, imagedata, name, category, image, description, price);
                 products.add(product);
             }
 
@@ -63,8 +64,8 @@ public class DBConnection {
         return products;
     }
 
-    public Product getProductById(int productId) {
-        Product product = null;
+    public product getProductById(int productId) {
+        product product = null;
 
         try {
             // Load the JDBC driver
@@ -89,7 +90,7 @@ public class DBConnection {
                  String image = resultSet.getString("Image");           
                 String description = resultSet.getString("product_description");
                 double price = resultSet.getDouble("Price");
-                product = new Product(id, imagedata, name, category,image, description, price );
+                product = new product(id, imagedata, name, category,image, description, price );
             }
 
             // Close the resources
@@ -139,9 +140,11 @@ public class DBConnection {
         return imageData;
     }
  
-  public void insertOrderIntoDatabase(String customer_id,String name, String address, String phone, String paymentMethod, List<Product> cartProducts) {
+  public void insertOrderIntoDatabase(String customer_id,String name, String address, String phone, String paymentMethod, List<product> cartProducts) {
         try {
+            
             Class.forName("com.mysql.jdbc.Driver");
+            
             Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
 
             // Insert order details into the orders table
@@ -153,7 +156,7 @@ public class DBConnection {
             orderStatement.setString(4, phone);
             orderStatement.setString(5, paymentMethod);
             orderStatement.executeUpdate();
-
+            out.println("insert suceess");
             // Get the generated order ID
             ResultSet generatedKeys = orderStatement.getGeneratedKeys();
             int orderId = -1;
@@ -164,12 +167,13 @@ public class DBConnection {
             // Insert order items into the order_items table
             String orderItemQuery = "INSERT INTO order_items (order_id, product_id, quantity, price) VALUES (?, ?, ?, ?)";
             PreparedStatement orderItemStatement = connection.prepareStatement(orderItemQuery);
-            for (Product product : cartProducts) {
+            for (product product : cartProducts) {
                 orderItemStatement.setInt(1, orderId);
                 orderItemStatement.setInt(2, product.getId());
                 orderItemStatement.setInt(3, 1); // Set the quantity to 1 for now
                 orderItemStatement.setDouble(4, product.getPrice());
                 orderItemStatement.executeUpdate();
+                out.println("insert suceess");
             }
 
             connection.close();
