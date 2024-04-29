@@ -22,7 +22,7 @@ body{
 }
 
 .payment{
-  background: #f8f8f8;
+  background: #ffff00;
   max-width: 360px;
   margin: 80px auto;
   height: auto;
@@ -122,7 +122,7 @@ body{
 
 .payment-logo p{
   position: relative;
-  color: #f8f8f8;
+  color: #daf7a6;
   font-family: 'Baloo Bhaijaan', cursive;
   font-size: 58px;
 }
