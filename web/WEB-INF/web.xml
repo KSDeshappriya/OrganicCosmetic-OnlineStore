@@ -14,6 +14,14 @@
         <servlet-name>orderServlet</servlet-name>
         <servlet-class>ordermanagement.orderServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>OrderServlet</servlet-name>
+        <servlet-class>OrderManagemnt.OrderServlet</servlet-class>
+    </servlet>
+      <servlet-mapping>
+        <servlet-name>OrderServlet</servlet-name>
+        <url-pattern>/OServlet</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>RegistrationServlet</servlet-name>
         <url-pattern>/RegistrationServlet</url-pattern>
@@ -78,6 +86,7 @@
         <servlet-name>orderServlet</servlet-name>
         <url-pattern>/orderServlet</url-pattern>
     </servlet-mapping>
+
     <session-config>
         <jsp-config>
             <taglib>
