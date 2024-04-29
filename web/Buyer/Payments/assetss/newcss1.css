@@ -55,7 +55,7 @@ body{
   word-spacing: 3px;
   outline: none;
   font-size: 16px;
-  color: #555555;
+  color: #c70039;
 }
 
 .card-grp{
@@ -81,13 +81,13 @@ body{
   bottom: 12px;
   left: 15px;
   font-size: 20px;
-  color: #555555;
+  color: #ffc300;
 }
 
 .btn{
   margin-top: 40px;
   background: #2196F3;
-  padding: 12px;
+  padding: 13px;
   text-align: center;
   color: #f8f8f8;
   border-radius: 5px;
