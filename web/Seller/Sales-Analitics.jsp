@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales Analytics</title> 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">ss 
     <link rel="stylesheet" href="Styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -43,7 +42,7 @@
         <div class="row">
             <div class="col-md-6">
                 <h2>Sales Trends</h2>
-                <canvas id="salesChartt" width="400" height="300"></canvas>
+                <canvas id="salesChartt" width="410" height="310"></canvas>
             </div>
             <div class="col-md-6">
                 <h2>Popular Products</h2>
