@@ -10,7 +10,7 @@
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         body {
-            padding: 20px;
+            padding: 28px;
         }
       
     </style>
