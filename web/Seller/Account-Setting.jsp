@@ -23,7 +23,7 @@
         <h1 class="mt-4 mb-4">Account Settings</h1>
         <form>
             <div class="form-group">
-                <label for="email">Email:</label>
+                <label for="email">E mail:</label>
                 <input type="email" class="form-control" id="email" name="email" required>
             </div>
             <div class="form-group">
