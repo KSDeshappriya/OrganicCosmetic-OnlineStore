@@ -14,7 +14,7 @@ import java.util.List;
 import product.product;
 
 public class DBConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/organic_cosmetics";
+    private static final String URL = "jdbc:mysql://localhost:3306/OrganicCosmeticStore";
     private static final String USERNAME = "root";
     private static final String PASSWORD = "";
 
