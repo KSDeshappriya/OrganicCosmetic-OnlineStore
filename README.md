@@ -20,6 +20,7 @@ Organic Cosmetics is a concept wed development project by a group of 10 students
 ### Demo Screeshots
 
 ![Organic Cosmetics Desktop Demo](docs/img/Homepage.png "Desktop Demo")
+![code](docs/img/PList.png)
 
 ### Prerequisites
 
@@ -75,8 +76,18 @@ Good artists copy, Great artists don't steal, they get inspire from others work.
 ### More Screeshots
 
 ![Organic Cosmetics Products page Demo](docs/img/Products_page.png "Desktop Demo")
+![code](docs/img/PList.png)
 ![Organic Cosmetics Analytics for the sales Demo](docs/img/Sales_Analytics.png "Desktop Demo")
 ![Organic Cosmetics Seller Dashboard page Demo](docs/img/Seller_Dashboard.png "Desktop Demo")
 ![Organic Cosmetics Products page Demo](docs/img/Products_page.png "Desktop Demo")
 ![Organic Cosmetics Order Management page Demo](docs/img/Order_Management.png "Desktop Demo")
 ![Organic Cosmetics Product Management page Demo](docs/img/Product_Management.png "Desktop Demo")
+
+**OrderServlet**
+![code](docs/img/OrderServlet.png)
+
+**SaveArticle**
+![code](docs/img/SaveArticle.png)
+
+**DataBase Connection**
+![code](docs/img/DB.png)
