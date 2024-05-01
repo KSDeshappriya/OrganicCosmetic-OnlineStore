@@ -1,9 +1,9 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add New Product</title>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Add New Product</title>
    
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Styles.css">
@@ -13,12 +13,11 @@
             padding: 20px;
         }
     </style>
-</head>
-<body>
-
-    <nav class="navbar navbar-expand-lg navbar-transparent">
+    </head>
+    <body>
+       <nav class="navbar navbar-expand-lg navbar-transparent">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.jsp">
+            <a class="navbar-brand" href="seller.jsp">
                 <img src="images/logo.png" alt="Logo" />
             </a>
  
@@ -44,10 +43,22 @@
 
     <div class="container5">
         <h1 class="mt-4 mb-4">Add New Product</h1>
-        <form action="#" method="POST" enctype="multipart/form-data">
+        <form action="../ProductServlet" method="POST" enctype="multipart/form-data">
+<!--            <div class="form-group">
+                <label for="productId">Product ID:</label>
+                <input type="number" class="form-control" id="productId" name="productId" required>
+            </div>-->
             <div class="form-group">
                 <label for="productName">Product Name:</label>
                 <input type="text" class="form-control" id="productName" name="productName" required>
+            </div>
+            <div class="form-group">
+                <label for="productType">Product Type:</label>
+                <input type="text" class="form-control" id="productType" name="productType" required>
+            </div>
+            <div class="form-group">
+                <label for="pcategory">Category:</label>
+                <input type="text" class="form-control" id="pcategory" name="pcategory" required>
             </div>
             <div class="form-group">
                 <label for="productDesc">Description:</label>
@@ -66,5 +77,5 @@
     </div>
 
     <script src="Js/scripts.js"></script>
-</body>
+    </body>
 </html>

@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
-    <link href="Styles.css" rel='stylesheet'>
+    <link href='Styles.css' rel='stylesheet'>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
@@ -19,12 +19,12 @@
         <section class="header-section">
             <nav class="navbar navbar-expand-lg navbar-transparent">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.jsp">
+                    <a class="navbar-brand" href="seller.jsp">
                         <img src="images/logo.png" alt="Logo" />
                     </a>
 
                     <div class="nav">
-                        <a href="Oder-Management.jsp" class="btn btn-coolNav mx-2">
+                        <a href="../OServlet" class="btn btn-coolNav mx-2">
                             <i class='bx bxs-shopping-bag icon-box'></i>
                             Order Management
                         </a>
@@ -114,7 +114,7 @@
         <footer class="footer fixed-bottom py-2">
             <div class="row">
                 <div class="col-12 text-right footer">
-                    <p class="mb-0">&copy; 2024 Global Flavors Hub. All rights reserved.</p>
+                    <p class="mb-0"></p>
                 </div>
             </div>
         </footer>
@@ -125,4 +125,3 @@
 </body>
 
 </html>
-
