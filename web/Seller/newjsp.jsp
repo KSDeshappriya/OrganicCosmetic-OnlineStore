@@ -25,15 +25,15 @@
             </a>
 
             <div class="nav">
-                <a href="Order-Management.jsp" class="btn btn-coolNav mx-2">
+                <a href="Seller/Order-Management.jsp" class="btn btn-coolNav mx-2">
                     <i class='bx bxs-shopping-bag icon-box'></i>
                     Order Management
                 </a>
-                <a href="Product-Management.jsp" class="btn btn-coolNav">
+                <a href="Seller/Product-Management.jsp" class="btn btn-coolNav">
                     <i class='bx bxs-package icon-box'></i>
                     Product Management
                 </a>
-                <a href="Sales-Analytics.jsp" style="font-size: 2.1vh;" class="btn btn-coolNav">
+                <a href="Seller/Sales-Analytics.jsp" style="font-size: 2.1vh;" class="btn btn-coolNav">
                     <i class='bx bx-line-chart icon-box'></i>
                     Sales Analytics
                 </a>

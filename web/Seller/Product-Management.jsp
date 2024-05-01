@@ -22,7 +22,7 @@
             </a>
  
             <div class="nav">
-                <a href="Oder-Management.jsp" class="btn btn-coolNav mx-2">
+                <a href="../OServlet" class="btn btn-coolNav mx-2">
                     <i class='bx bxs-shopping-bag icon-box'></i>
                     Order Management
                 </a>
