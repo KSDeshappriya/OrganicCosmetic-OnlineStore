@@ -35,12 +35,22 @@ public class Login extends HttpServlet {
 
                 // Check if referrer is null or not equal to "registration.jsp"
                 if (referrer == null || !referrer.contains("registration.jsp")) {
-                    // Redirect to the original request URI
-                    if (referrer != null && !referrer.isEmpty()) {
-                        response.sendRedirect(referrer);
-                    } else {
-                        response.sendRedirect(request.getContextPath() + "/index.jsp");
+                    String role = rs.getString("role");
+
+                    // Redirect based on role
+                    if (role.equals("admin")) {
+                        response.sendRedirect(request.getContextPath() + "/Admin/AddArticle.jsp");
+                    } else if (role.equals("seller")) {
+                        response.sendRedirect(request.getContextPath() + "/Seller/seller.jsp");
+                    } else if (role.equals("consumer")) {
+                        // Redirect to the original request URI
+                        if (referrer != null && !referrer.isEmpty()) {
+                            response.sendRedirect(referrer);
+                        } else {
+                            response.sendRedirect(request.getContextPath() + "/index.jsp");
+                        }
                     }
+
                 } else {
                     // If the referrer is "registration.jsp", redirect to a default page
                     response.sendRedirect(request.getContextPath() + "/index.jsp");
