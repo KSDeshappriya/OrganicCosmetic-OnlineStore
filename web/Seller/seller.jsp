@@ -24,7 +24,7 @@
                     </a>
 
                     <div class="nav">
-                        <a href="Oder-Management.jsp" class="btn btn-coolNav mx-2">
+                        <a href="../OServlet" class="btn btn-coolNav mx-2">
                             <i class='bx bxs-shopping-bag icon-box'></i>
                             Order Management
                         </a>
@@ -114,7 +114,7 @@
         <footer class="footer fixed-bottom py-2">
             <div class="row">
                 <div class="col-12 text-right footer">
-                    <p class="mb-0">&copy; 2024 Global Flavors Hub. All rights reserved.</p>
+                    <p class="mb-0"></p>
                 </div>
             </div>
         </footer>
