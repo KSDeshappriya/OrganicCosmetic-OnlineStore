@@ -173,12 +173,7 @@ input, select, textarea {
 		clear: both;
 	}
 
-<<<<<<< Updated upstream
-	p, ul, ol, dl, table, blockquote, form {
-		margin-bottom: 2em;
-	}
 
-=======
 	ul, ol, dl, table, blockquote, form {
 		margin-bottom: 2em;
 	}
@@ -187,7 +182,7 @@ input, select, textarea {
 		/*margin-bottom: 2em; */
 	}
 
->>>>>>> Stashed changes
+
 /* Container */
 
 	.container {
@@ -3048,9 +3043,6 @@ input, select, textarea {
 		-webkit-transform: rotate(45deg);
 		-ms-transform: rotate(45deg);
 		transform: rotate(45deg);
-<<<<<<< Updated upstream
-	  }
-=======
 	  }
 
 /* dropdown list */
@@ -3295,7 +3287,7 @@ body {
 }
 
 .newsletter .checkbox {
-    margin
+    /*margin*/
 }
 
 
@@ -3320,4 +3312,3 @@ body {
 }
 
 .footer-link:is(:hover, :focus) { color: var(--mustard); }
->>>>>>> Stashed changes
