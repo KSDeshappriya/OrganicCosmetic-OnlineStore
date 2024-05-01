@@ -1,0 +1,166 @@
+* {
+  margin: 0px;
+  margin-top: -3px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+/* --------------------------------Navigation Bar --------------------------*/
+
+.container-fluid {
+  display: flex;
+  background-color: rgba(19, 15, 35, 0.822);
+  padding: 15px;
+}
+
+#navbarNav {
+  justify-content: space-evenly;
+  margin-right: 100px;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 16px !important;
+  margin: 0px 35px;
+}
+
+.nav-link:hover {
+  color: rgb(255, 87, 25) !important;
+}
+.btn-box {
+  position: relative;
+  background: transparent;
+  border: 2px solid rgb(255, 87, 25);
+  border-radius: 8px;
+  width: 85px;
+  height: 35px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.btn-btn-box {
+  text-decoration: none;
+  color: rgb(255, 87, 25);
+  font-size: 17px;
+  overflow: hidden;
+  transition: color 0.5s; /* Apply transition to color property */
+}
+
+.btn-box::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  background: rgb(255, 87, 25); /* Set background color */
+  transition: width 0.5s; /* Apply transition to width property */
+}
+
+.btn-box:hover::before {
+  width: 100%;
+}
+
+.btn-btn-box:hover {
+  color: rgba(19, 15, 35, 0.822); /* Change text color on hover */
+}
+
+/* -----------------------------------Hero section ------------------------------------*/
+
+.hero-container-fluid {
+  background-image: url(./Image/Cover.jpg);
+  background-color: rgba(0, 0, 0, 0.507);
+  background-blend-mode: overlay;
+  background-size: cover;
+  height: 80vh;
+  margin-top: -8px;
+}
+.cover-text {
+  padding: 255px 150px;
+  height: 40vh;
+  width: 60vw;
+}
+.cover-text1 {
+  font-family: "EB Garamond", serif;
+  color: rgb(255, 87, 25);
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.cover-text2 {
+  font-size: 30px;
+  color: white;
+}
+
+/*------------------------------------- Products --------------------------------------*/
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+  background-color: rgb(0, 26, 255);
+  margin: 100px 0 0 100px;
+  border-width: 0px !important;
+}
+
+/* --------------------------------------About--------------------------------------- */
+.about-section {
+  background-color: #e9c199;
+  width: 100%;
+  height: 80vh;
+  margin-top: 60px;
+  display: flex;
+}
+
+.about-text {
+  flex: 1;
+  padding: 90px;
+  text-align: center;
+}
+.about-image {
+  flex: 1;
+  width: 500px;
+  height: 500px;
+  padding-top: 40px;
+  padding-left: 60px;
+}
+
+.logpage {
+  display: flex;
+  background-image:url(./Image/Log.jpg);
+  background-size:cover;
+  height: 100vh;
+}
+
+
+.register{
+  flex: 1;
+  margin-left: 250px;
+  margin-top: 60px;
+  background-color: rgba(0, 0, 0, 0.555);
+  max-width: 430px;
+  padding: 60px;
+  height: 70vh;
+  border-radius: 8px;
+  align-content: center;
+  color: white;
+  font-size: 15px;
+  line-height: 25px;
+  }
+input{
+  
+  display: inline-block;
+  width: 300px;
+  padding: 3px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  
+
+}
