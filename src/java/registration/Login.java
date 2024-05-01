@@ -36,11 +36,16 @@ public class Login extends HttpServlet {
                 // Check if referrer is null or not equal to "registration.jsp"
                 if (referrer == null || !referrer.contains("registration.jsp")) {
                     // Redirect to the original request URI
-                    response.sendRedirect(referrer);
+                    if (referrer != null && !referrer.isEmpty()) {
+                        response.sendRedirect(referrer);
+                    } else {
+                        response.sendRedirect(request.getContextPath() + "/index.jsp");
+                    }
                 } else {
                     // If the referrer is "registration.jsp", redirect to a default page
                     response.sendRedirect(request.getContextPath() + "/index.jsp");
                 }
+
             } else {
                 response.sendRedirect(request.getContextPath() + "/Admin/auth/login.jsp?status=failed");
             }
