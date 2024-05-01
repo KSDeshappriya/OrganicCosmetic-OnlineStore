@@ -8,7 +8,7 @@
     <title>Order Management</title>
     
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="Styles_1.css">
+    <link rel="stylesheet" href="Seller/Styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         body {
@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-lg navbar-transparent">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.jsp">
-                <img src="images/logo.png" alt="Logo" />
+                <img src="Seller/images/logo.png" alt="Logo" />
             </a>
 
             <div class="nav">
