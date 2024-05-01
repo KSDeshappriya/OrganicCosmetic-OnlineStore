@@ -33,34 +33,6 @@ import javax.servlet.http.Part;
 public class ProductServlet extends HttpServlet {
 
     /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-//    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-//            throws ServletException, IOException {
-//        response.setContentType("text/html;charset=UTF-8");
-//        try (PrintWriter out = response.getWriter()) {
-//            /* TODO output your page here. You may use following sample code. */
-//            out.println("<!DOCTYPE html>");
-//            out.println("<html>");
-//            out.println("<head>");
-//            out.println("<title>Servlet ProductServlet</title>");            
-//            out.println("</head>");
-//            out.println("<body>");
-//            out.println("<h1>Servlet ProductServlet at " + request.getContextPath() + "</h1>");
-//            out.println("</body>");
-//            out.println("</html>");
-//        }
-//    }
-//
-//    
-  // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
      * Handles the HTTP <code>GET</code> method.
      *
      * @param request servlet request
@@ -97,7 +69,7 @@ public class ProductServlet extends HttpServlet {
         Float price = Float.parseFloat(pprice);
         Part file = request.getPart("productImage");
         String imageFileName = file.getSubmittedFileName();
-        String uploadPath = "D://NSBM - git/Online_Store/OrganicCosmetic-OnlineStore/web/Seller/images/" + imageFileName;
+        String uploadPath = "/home/kavindu/Downloads/VSCode/DEA-Project/GitHub/OrganicCosmetic-OnlineStore/web/Seller/images/" + imageFileName;
         
         //................................................................................................
         
@@ -117,7 +89,7 @@ public class ProductServlet extends HttpServlet {
         //................................................................................................
          
         String driver = "com.mysql.jdbc.Driver";
-        String url = "jdbc:mysql://localhost:3306/youtube";
+        String url = "jdbc:mysql://localhost:3306/OrganicCosmeticStore";
         String query = "INSERT INTO product_details(product_name, product_type, category, imageFileName, product_description, price) VALUES (?, ?, ?, ?, ?, ?)";
         
        Connection con = null;

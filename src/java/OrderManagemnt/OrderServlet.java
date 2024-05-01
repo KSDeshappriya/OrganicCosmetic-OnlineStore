@@ -39,10 +39,10 @@ public class OrderServlet extends HttpServlet {
         try {
             // JDBC connection for the first database
             Class.forName("com.mysql.jdbc.Driver");
-            conn1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/youtube", "root", "");
+            conn1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/OrganicCosmeticStore", "root", "");
 
             // JDBC connection for the second database
-            conn2 = DriverManager.getConnection("jdbc:mysql://localhost:3306/youtube", "root", "");
+            conn2 = DriverManager.getConnection("jdbc:mysql://localhost:3306/OrganicCosmeticStore", "root", "");
             out.println("hi1");
             
             // SQL query to retrieve order details from the first database
