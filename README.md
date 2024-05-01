@@ -56,10 +56,13 @@ git clone https://github.com/KSDeshappriya/OrganicCosmetic-OnlineStore.git
 ### Team
 <!-- CONTRIBUTORS_START -->
 - <img src="https://avatars.githubusercontent.com/u/119614718?v=4" width="50" height="50" alt="KSDeshappriya"> [KSDeshappriya](https://github.com/KSDeshappriya)
+- <img src="https://avatars.githubusercontent.com/u/101052107?v=4" width="50" height="50" alt="gthuva"> [gthuva](https://github.com/gthuva)
 - <img src="https://avatars.githubusercontent.com/u/130966989?v=4" width="50" height="50" alt="SimShad"> [SimShad](https://github.com/SimShad)
-- <img src="https://avatars.githubusercontent.com/u/101052107?v=4" width="50" height="50" alt="gthuva"> [0xgthuva](https://github.com/gthuva)
-- <img src="https://avatars.githubusercontent.com/u/135829912?v=4" width="50" height="50" alt="Iznaism"> [Iznaism](https://github.com/Iznaism)
 - <img src="https://avatars.githubusercontent.com/u/121929801?v=4" width="50" height="50" alt="WMAPraveen"> [WMAPraveen](https://github.com/WMAPraveen)
+- <img src="https://avatars.githubusercontent.com/u/138643099?v=4" width="50" height="50" alt="ANNWeerakkodi"> [ANNWeerakkodi](https://github.com/ANNWeerakkodi)
+- <img src="https://avatars.githubusercontent.com/u/135829912?v=4" width="50" height="50" alt="Iznaism"> [Iznaism](https://github.com/Iznaism)
+- <img src="https://avatars.githubusercontent.com/u/128891887?v=4" width="50" height="50" alt="nisandi"> [nisandi](https://github.com/nisandi)
+- <img src="https://avatars.githubusercontent.com/u/135825001?v=4" width="50" height="50" alt="wrtdilshan"> [wrtdilshan](https://github.com/wrtdilshan)
 
 <!-- CONTRIBUTORS_END -->
 
