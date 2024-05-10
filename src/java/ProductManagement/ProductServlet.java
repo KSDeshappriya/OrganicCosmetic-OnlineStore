@@ -1,19 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ProductManagement;
 
+import DB.GenericDAO;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -31,6 +23,9 @@ import javax.servlet.http.Part;
 @MultipartConfig
 @WebServlet(name = "ProductServlet", urlPatterns = {"/ProductServlet"})
 public class ProductServlet extends HttpServlet {
+
+    private final GenericDAO dao = new GenericDAO();
+    private final String[] columns = {"product_name", "product_type", "category", "imageFileName", "product_description", "price"};
 
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -88,41 +83,14 @@ public class ProductServlet extends HttpServlet {
         }
         //................................................................................................
          
-        String driver = "com.mysql.jdbc.Driver";
-        String url = "jdbc:mysql://localhost:3306/OrganicCosmeticStore";
-        String query = "INSERT INTO product_details(product_name, product_type, category, imageFileName, product_description, price) VALUES (?, ?, ?, ?, ?, ?)";
-        
-       Connection con = null;
-       
         try {
-            Class.forName(driver);
-            con = DriverManager.getConnection(url,"root","");
-            PreparedStatement statement = con.prepareStatement(query);
-            
-            statement.setString(1, product_name);
-            statement.setString(2, product_type);
-            statement.setString(3, category);
-            statement.setString(4,imageFileName);
-            statement.setString(5, product_description);
-            statement.setFloat(6, price);
-            
-            int rowsInserted = statement.executeUpdate();
-
-        if (rowsInserted > 0) {
-            // Product added successfully
+            Object[] values = {product_name, product_type, category, imageFileName, product_description, price};
+            dao.addRecord("product_details", columns, values);
             response.getWriter().println("Product added successfully!");
-        } else {
-            // Failed to add product
+        } catch (SQLException ex) {
+            Logger.getLogger(ProductServlet.class.getName()).log(Level.SEVERE, null, ex);
             response.getWriter().println("Failed to add product.");
         }
-            
-          } catch (ClassNotFoundException |SQLException ex) {
-            Logger.getLogger(ProductServlet.class.getName()).log(Level.SEVERE, null, ex);
-        }  
-
-
-//processRequest(request, response);
-        
     }
 
     /**

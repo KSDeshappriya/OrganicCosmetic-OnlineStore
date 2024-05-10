@@ -29,31 +29,17 @@ public class OrderServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         
-        Connection conn1 = null;
         Connection conn2 = null;
-        PreparedStatement stmt1 = null;
         PreparedStatement stmt2 = null;
-        ResultSet rs1 = null;
         ResultSet rs2 = null;
 
         try {
             // JDBC connection for the first database
             Class.forName("com.mysql.jdbc.Driver");
-            conn1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/OrganicCosmeticStore", "root", "");
 
             // JDBC connection for the second database
             conn2 = DriverManager.getConnection("jdbc:mysql://localhost:3306/OrganicCosmeticStore", "root", "");
             out.println("hi1");
-            
-            // SQL query to retrieve order details from the first database
-//            String sql1 = "SELECT oi.order_id, oi.date, u.uname FROM database1.orders_items oi JOIN database1.users u ON oi.customer_id = u.id";
-//            stmt1 = conn1.prepareStatement(sql1);
-//            rs1 = stmt1.executeQuery();
-
-            // SQL query to retrieve order details from the second database
-//            String sql2 = "SELECT oi.order_id, oi.date, u.uname FROM database2.orders_items oi JOIN database2.users u ON oi.customer_id = u.id";
-//            stmt2 = conn2.prepareStatement(sql2);
-//            rs2 = stmt2.executeQuery();
             
             String sql = "SELECT oi.order_id, oi.date, u.uname FROM orders_items oi JOIN users u ON oi.order_id = u.id;";
             stmt2 = conn2.prepareStatement(sql);
@@ -79,9 +65,6 @@ public class OrderServlet extends HttpServlet {
             out.println("hi5");
             // Closing resources
             try {
-                if (rs1 != null) rs1.close();
-                if (stmt1 != null) stmt1.close();
-                if (conn1 != null) conn1.close();
                 if (rs2 != null) rs2.close();
                 if (stmt2 != null) stmt2.close();
                 if (conn2 != null) conn2.close();
