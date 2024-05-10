@@ -1,4 +1,10 @@
+<%@ page import="javax.servlet.http.HttpSession" %>
+<%@ page import="java.util.Objects" %>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%
+    String username = (session != null) ? (String) session.getAttribute("name") : null;
+%>
 <!DOCTYPE HTML>
 <!--
 	
@@ -59,7 +65,14 @@
 						<li><a href="article.jsp">Article</a></li>				
 						<li><a href="" style="display: none;">Empty Space</a></li>			
 						<li><a href="../../CartServlet?action=view"><img src="images/cart2.png">Cart</a></li>
-						<li><a href="../../Admin/auth/login.jsp"><img src="images/user2.png">Login</a></li>
+                                                <% if (username == null) { %>
+                                                    <!-- Show login button if user is not logged in -->
+                                                    <li><a href="../../Admin/auth/login.jsp"><img src="images/user2.png">Login</a></li>
+                                                <% } else { %>
+                                                    <!-- Show username if user is logged in -->
+                                                    <li><a><%= username %></a></li>
+                                                <% } %>
+                                                <li><a href="../../Logout"><img src="images/user2.png">Logout</a></li>
 						</ul>
 					</nav>
 

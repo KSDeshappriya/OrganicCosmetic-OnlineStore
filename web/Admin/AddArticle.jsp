@@ -1,3 +1,9 @@
+<%
+    if (session.getAttribute("name") == null) {
+        response.sendRedirect("auth/login.jsp");
+    }
+%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

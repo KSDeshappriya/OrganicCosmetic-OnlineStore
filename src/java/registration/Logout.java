@@ -25,7 +25,7 @@ public class Logout extends HttpServlet {
             throws ServletException, IOException {
         HttpSession session = request.getSession();
         session.invalidate();
-        response.sendRedirect("Admin/auth/login.jsp");
+        response.sendRedirect("./");
     }
 
 }
