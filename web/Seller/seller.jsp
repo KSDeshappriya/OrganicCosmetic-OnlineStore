@@ -1,4 +1,10 @@
- <!DOCTYPE html>
+<%
+    if (session.getAttribute("name") == null) {
+        response.sendRedirect("../Admin/auth/login.jsp");
+    }
+%>
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
