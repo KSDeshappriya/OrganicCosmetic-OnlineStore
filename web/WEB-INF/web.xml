@@ -11,6 +11,10 @@
         <servlet-name>CheckoutServlet</servlet-name>
         <servlet-class>product.CheckoutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DBConnection</servlet-name>
+        <servlet-class>product.DBConnection</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegistrationServlet</servlet-name>
         <url-pattern>/RegistrationServlet</url-pattern>
@@ -46,10 +50,6 @@
         <servlet-class>product.cartServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>DBConnection</servlet-name>
-        <servlet-class>product.DBConnection</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>CartServlet</servlet-name>
         <servlet-class>product.CartServlet</servlet-class>
     </servlet>
@@ -60,10 +60,6 @@
     <servlet-mapping>
         <servlet-name>cartServlet</servlet-name>
         <url-pattern>/cartServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>DBConnection</servlet-name>
-        <url-pattern>/DBConnection</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CartServlet</servlet-name>
@@ -77,6 +73,13 @@
         <servlet-name>CheckoutServlet</servlet-name>
         <url-pattern>/CheckoutServlet</url-pattern>
     </servlet-mapping>
+<<<<<<< Updated upstream
+=======
+    <servlet-mapping>
+        <servlet-name>DBConnection</servlet-name>
+        <url-pattern>/DBConnection</url-pattern>
+    </servlet-mapping>
+>>>>>>> Stashed changes
     <session-config>
         <session-timeout>
             30
